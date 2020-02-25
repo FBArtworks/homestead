@@ -1,0 +1,7 @@
+#nav{
+  background-color:rgb(0, 0, 0) ;
+  height: 80px;
+}
+a.py-2 d-none d-md-inline-block{
+  color: rgb(255, 255, 255);
+}
