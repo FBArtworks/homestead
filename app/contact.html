@@ -55,7 +55,7 @@
 <section class="contact-section">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-lg-6">
         <div class="discord-badge">
           <a href="#">
             <img src="img/discord_logo.png" style="width: 65px;" alt="">
@@ -69,20 +69,16 @@
         <a href="#"><h3>Get support</h3> </a>
       </div>
 
-      <div class="col-sm-6">
-        <h3>Or write us</h3>
-        <h4>Name:</h4>
-        <div class="name-field">
-          <h5>e.g. Snarr</h5>
-        </div>
-        <h4>Mail:</h4>
-        <div class="mail-field">
-          <h5>someone@example.com</h5>
-        </div>
-        <h4>Message:</h4>
-        <div class="message-field">
-          <h5>Write your Message here..</h5>
-        </div>
+      <div class="col-lg-6">
+        <form class="form-group" action="index.html" method="post">
+          <label for="name-input">Name:</label>
+          <input type="text" class="form-control" name="name" value="" placeholder="e.g. Snarr">
+          <label for="email-input">Email:</label>
+          <input type="email" class="form-control" name="" value="" placeholder="someone@example.com">
+          <label for="message">Message</label>
+          <textarea class="form-control" name="message" rows="5" cols="80"></textarea>
+          <button type="submit" class="btn">Contact us</button>
+        </form>
       </div>
     </div>
   </div>
