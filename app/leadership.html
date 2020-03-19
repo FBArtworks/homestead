@@ -11,29 +11,35 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
   <header>
-          <div class="container">
-            <nav id="navigation">
-              <a href="index.html" class="logo"><img src="img/homestead-logo_trwhite.png" alt="HOMΞSΤΞΛD" style="width: 60px;"> </a>
-              <a aria-label="mobile menu" class="nav-toggle">
+    <nav>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html" class="menu-item"><img src="img/homestead-logo_trwhite.png" style="width: 50px;"alt="HOMΞSΤΞΛD"></a></li>
+          <li><a href="index.html" class="menu-item">Home</a></li>
+          <li><a href="index.html" class="menu-item">About</a></li>
+          <li><a href="mentoring.html" class="menu-item">Mentoring</a></li>
+          <li><a href="jobs.html" class="menu-item">Jobs</a></li>
+          <li><a href="leadership.html" class="menu-item">Leadership</a></li>
+          <li><a href="contact.html" class="menu-item">Contact</a></li>
+          <li><a href="legal.html" class="menu-item">Legal</a></li>
+          <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
+        </ul>
+      </div>
+    </nav>
 
-              </div>
-                <span></span>
-                <span></span>
-                <span></span>
-              </a>
-                <ul class="menu-left">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="mentoring.html">Mentoring</a></li>
-                  <li><a href="jobs.html">Jobs</a></li>
-                  <li><a href="leadership.html">Leadership</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="legal.html">Legal</a></li>
-                </ul>
-            </nav>
-          </div>
+    <!-- SCRIPT search DOESNT WORK YET
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#search').click(function(){
+          $('.menu-item').toggleClass('hide-item')
+        })
+      })
+    </script>
+
+    -->
+
+
   </header>
 
   <!-- ###################### HERO ######################################### -->
@@ -157,27 +163,48 @@
 <!-- ###################### FOOTER ######################################### -->
 
 <footer>
-  <footer id="footer" class="container-fluid text-center">
-    <img src="/img/default-logo.png" alt="homestead-logo">
-    <div class="sitemap"
-      <h5>Sitemap</h5>
-        <a href="#"><h6>Homepage</h6></a>
-        <a href="#"><h6>Mentoring</h6></a>
-        <a href="#"><h6>Leadership</h6></a>
-        <a href="#"><h6>Contact</h6></a>
-        <a href="#"><h6>About</h6></a>
-        <a href="#"><h6>Privacy Policy</h6></a>
-        <a href="#"><h6>Legal</h6></a>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="/img/default-logo.png" alt="HOMΞSΤΞΛD" style="width: 384px;">
+        <div class="footer-sitemap">
+          <h5>Sitemap</h5>
+          <div class="row">
+          <div class="col-sm-6">
+              <a href="#"><h6>Homepage</h6></a>
+              <a href="#"><h6>Mentoring</h6></a>
+              <a href="#"><h6>Leadership</h6></a>
+              <a href="#"><h6>Contact</h6></a>
+          </div>
+          <div class="col-sm-6">
+              <a href="#"><h6>About</h6></a>
+              <a href="#"><h6>Privacy Policy</h6></a>
+              <a href="#"><h6>Legal</h6></a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="img/discord_logo.png" alt="" style="width: 65px;">
+          </div>
+          <div class="col-md-8">
+            <h3>Join us on Discord</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <img src="img/homestead-logo_trwhite.png" alt="" style="width: 70px">
+          </div>
+          <div class="col-md-8">
+            <h3 style="font: Bold 30px/36px SF Pro Text;color: #C6C6C6;">By the vision only.</h3>
+          </div>
+        </div>
+      </div>
     </div>
-    <img src="img/discord_logo.png" alt="" style="width: 65px;">
-    <h3>Join us on Discord</h3>
-    <img src="img/homestead-logo_trwhite.png" alt="" style="width: 70px">
-    <h3 style="font: Bold 30px/36px SF Pro Text;color: #C6C6C6;">By the vision only.</h3>
-
-    </div>
-  </footer>
-
-
+  </div>
+</footer>
 
 </body>
 </html>

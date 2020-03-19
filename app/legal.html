@@ -4,33 +4,126 @@
   <title>HOMΞSΤΞΛD</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-          <div class="container">
-            <nav id="navigation">
-              <a href="#" class="logo">HOMΞSΤΞΛD</a>
-              <a aria-label="mobile menu" class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-              </a>
-                <ul class="menu-left">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="mentoring.html">Mentoring</a></li>
-                  <li><a href="jobs.html">Jobs</a></li>
-                  <li><a href="leadership.html">Leadership</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="legal.html">Legal</a></li>
-                </ul>
-            </nav>
-          </div>
+    <nav>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html" class="menu-item"><img src="img/homestead-logo_trwhite.png" style="width: 50px;"alt="HOMΞSΤΞΛD"></a></li>
+          <li><a href="index.html" class="menu-item">Home</a></li>
+          <li><a href="index.html" class="menu-item">About</a></li>
+          <li><a href="mentoring.html" class="menu-item">Mentoring</a></li>
+          <li><a href="jobs.html" class="menu-item">Jobs</a></li>
+          <li><a href="leadership.html" class="menu-item">Leadership</a></li>
+          <li><a href="contact.html" class="menu-item">Contact</a></li>
+          <li><a href="legal.html" class="menu-item">Legal</a></li>
+          <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- SCRIPT search DOESNT WORK YET
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#search').click(function(){
+          $('.menu-item').toggleClass('hide-item')
+        })
+      })
+    </script>
+
+    -->
+
+
   </header>
+
+  <section class="hero-section">
+    <div class="container" style="background-color: rgb(0, 0, 0)">
+      <div class="row">
+        <div class="col-">
+          <img src="img/homestead-logo_trwhite.png" alt="HOMΞSΤΞΛD" style="width: 80px;">
+          <h1>LEGAL</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- #################### IMPRESUM ####################################### -->
+
+<section class="impressum">
+  <div class="container">
+    <div class="row">
+
+      <div class="col">
+        <h1>IMPRESSUM</h1>
+        <div class="impressum-address">
+          <h4>John Mateke</h4>
+          <h4>Meisenweg 29</h4>
+          <h4>14712 Rathenow</h4>
+        </div>
+        <div class="impressum-contact">
+          <h4>E-Mail: <a href="#">info@homesteadglobal.com</a> </h4>
+          <h4>Telefon: <a href="#">+49 1525 9066106</a>(Support via WhatsApp) </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- #################### FOOTER ########################################### -->
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="/img/default-logo.png" alt="HOMΞSΤΞΛD" style="width: 384px;">
+        <div class="footer-sitemap">
+          <h5>Sitemap</h5>
+          <div class="row">
+          <div class="col-sm-6">
+              <a href="#"><h6>Homepage</h6></a>
+              <a href="#"><h6>Mentoring</h6></a>
+              <a href="#"><h6>Leadership</h6></a>
+              <a href="#"><h6>Contact</h6></a>
+          </div>
+          <div class="col-sm-6">
+              <a href="#"><h6>About</h6></a>
+              <a href="#"><h6>Privacy Policy</h6></a>
+              <a href="#"><h6>Legal</h6></a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="img/discord_logo.png" alt="" style="width: 65px;">
+          </div>
+          <div class="col-md-8">
+            <h3>Join us on Discord</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <img src="img/homestead-logo_trwhite.png" alt="" style="width: 70px">
+          </div>
+          <div class="col-md-8">
+            <h3 style="font: Bold 30px/36px SF Pro Text;color: #C6C6C6;">By the vision only.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
 </body>
 </html>

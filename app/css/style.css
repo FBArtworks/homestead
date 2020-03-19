@@ -10,6 +10,68 @@
 #footer{
   background-color:rgba(78, 78, 78, 1);
 }
+body{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  height: 44px;
+  background: #000;
+}
+.menu{
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  overflow: hidden;
+}
+.menu ul{
+  width: 100%;
+  margin: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.menu ul li{
+  list-style: none;
+}
+.menu ul li,
+.menu ul li a{
+  color: #fff;
+  line-height: 44px;
+  text-decoration: none;
+}
+
+/*  CSS Search Script
+.menu ul li a.menu-site{
+  transform: scale(1);
+  transition: 0.5s;
+  display: block;
+}
+.menu ul li a.menu-site.hide-item{
+  transform: scale(0);
+}
+*/
+.hero-content{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-content img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.learn-more {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.learn-more-arrow{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 header{
   background-color: rgb(0,0,0)
 }
@@ -37,6 +99,9 @@ h1{
   height: 16.25em;
   border-radius: 15px;
   border: 1px solid #070707;
+}
+footer{
+  background-color: rgba(78, 78, 78, 1)
 }
 .hero-lead-section{
   background-color: rgb(0, 0, 0);
