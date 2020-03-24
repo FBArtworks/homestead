@@ -604,8 +604,8 @@ padding: 13px 27px 13px 27px;
   height: 550px;
 }
 
-.announcement-logo img{
-  margin-top: 125px;
+.announcement-logo{
+  padding-top: 50px;
   margin: 0 auto;
 }
 .announcement-text h1{
