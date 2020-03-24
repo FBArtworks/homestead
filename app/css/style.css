@@ -347,7 +347,7 @@
 @font-face {
   font-family: 'SF-Pro-Text';
   src: url(/fonts/SF-Pro-Text/SF-Pro-Text-Semibold.otf) format("opentype");
-  font-style: semibold;
+  font-weight: 400;
 }
 @font-face {
   font-family: 'SF-Pro-Text';
@@ -428,259 +428,2781 @@
   #####################################
   #####################################
   #####################################*/
-
+*{
+  overflow-x: hidden;
+}
 @media (max-width: 1920px) {
   .hero{
     height: 1080px;
   }
 }
+@media (max-width:480px) {
+  #navigation{
+    background-color:rgb(0, 0, 0) ;
+  }
+  #hero{
+    background-color:rgb(0,0,0);
+    height: auto;
+  }
+  #announcements{
+    background-color:rgba(44, 44, 44, 1)
+  }
+  #footer{
+    background-color:rgba(78, 78, 78, 1);
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  nav{
+    height: 44px;
+    background: #000;
+  }
 
-#navigation{
-  background-color:rgb(0, 0, 0) ;
-}
-#hero{
-  background-color:rgb(25,0,0);
-  height: 100%;
-}
-#announcements{
-  background-color:rgba(44, 44, 44, 1)
-}
-#footer{
-  background-color:rgba(78, 78, 78, 1);
-}
-body{
-  margin: 0;
-  padding: 0;
-}
-nav{
-  height: 44px;
-  background: #000;
-}
+  .menu{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+  }
+  .menu ul{
+    max-width: 100%;
+    margin: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu ul li{
+    list-style: none;
+  }
+  .menu ul li,
+  .menu ul li a{
+    color: #fff;
+    line-height: 44px;
+    text-decoration: none;
+  }
 
-.menu{
-  position: relative;
-  margin: 0 auto;
-  width: 1200px;
-  overflow: hidden;
-}
-.menu ul{
-  width: 100%;
-  margin: 0;
-  padding-right: 0;
-  display: flex;
-  justify-content: space-between;
-}
-.menu ul li{
-  list-style: none;
-}
-.menu ul li,
-.menu ul li a{
-  color: #fff;
-  line-height: 44px;
-  text-decoration: none;
-}
+  /*  CSS Search Script
+  .menu ul li a.menu-site{
+    transform: scale(1);
+    transition: 0.5s;
+    display: block;
+  }
+  .menu ul li a.menu-site.hide-item{
+    transform: scale(0);
+  }
+  */
+  .hero-content{
+    margin-top: 44px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-content img{
+    width: 200px;
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-content h1{
+    font: Bold 27px/33px SF Pro Display;
+    text-align: center;
+  }
+  .learn-more {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .learn-more-arrow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero{
+    background-color:rgb(0,0,0);
+    height: auto;
+  }
 
-/*  CSS Search Script
-.menu ul li a.menu-site{
-  transform: scale(1);
-  transition: 0.5s;
-  display: block;
-}
-.menu ul li a.menu-site.hide-item{
-  transform: scale(0);
-}
-*/
-.hero-content{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.hero-content img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.learn-more {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.learn-more-arrow{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.hero{
-  background-color:rgb(25,0,0);
-  height: 1080px;
-}
-.hero-content{
-  margin-top: 150px;
-  margin-bottom: 530px;
-}
-.hero-line{
-  margin: 0 auto;
-  position: relative;
-  padding: 10px;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-}
-.hero-line h3{
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.learn-more{
-  margin: 0 auto;
-  padding-top: 130px;
-  font: Regular 22px/26px SF Pro Text;
-}
-.learn-more a{
-  font-family: SF-Pro-Display;
-  text-decoration: none;
-}
-.learn-more h4{
-  font-family: SF-Pro-Text;
-  font-size: 30px;
-  font-style: Medium;
-  text-decoration: none;
-  color: #FFFFFF;
-}
-.learn-more svg{
-  margin: 0 auto;
-}
-.about{
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-.about-sub{
-  font: Bold 30px/36px SF Pro Text;
-  color: #C6C6C6;
-}
-.about h3{
-  font: Semibold 400px SF Pro Rounded;
-}
-.about p{
-  padding-top: 40px;
-  font: 22px/26px SF Pro Text;
-}
-.leadership-cta{
-  margin: 0 auto;
-  position: relative;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-}
-.leadership-cta h3 {
-  margin: 0 auto;
-}
-.logo{
-  margin-right: auto;
-  margin-left: 4.5%;
-  margin-top: 145px;
-}
-.discord-cta{
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 45px;
-}
-.discord-cta img{
-  margin-right: 10px;
-  margin-left: 10%;
-}
-.discord-button{
-  border: 2px solid #2288BB;
-  border-radius: 50px;
-  background-color: #FFFFFF
-}
-.discord-button h3{
-padding: 13px 27px 13px 27px;
+  .hero-line{
+    margin: 0 auto;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-line h3{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font: Bold 15px/18px SF Pro Text;
+  }
+  .learn-more{
+    margin: 0 auto;
+    padding-top: 50px;
+    font:  22px/26px SF Pro Text;
+  }
+  .learn-more a{
+    font-family: SF-Pro-Display;
+    text-decoration: none;
+  }
+  .learn-more h4{
+    font-family: SF-Pro-Text;
+    font-size: 23px;
+    font-style: Medium;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .learn-more svg{
+    margin: 0 auto;
+  }
+  .about{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .about h1{
+    font: Bold 40px/48px SF Pro Display;
+  }
+  .about-sub{
+    font: Bold 24px/29px SF Pro Text;
+    color: #C6C6C6;
+  }
+  .about h3{
+    font: Semibold 400px SF Pro Rounded;
+  }
+  .about p{
+    padding-top: 40px;
+    font: 22px/26px SF Pro Text;
+  }
+  .leadership-cta{
+    margin: 0 auto;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  .leadership-cta h3 {
+    margin: 0 auto;
+  }
+  .logo{
+    max-width: 480px;
+    margin-right: auto;
+    margin-left: 4.5%;
+    margin-top: 145px;
+  }
+  .discord-cta{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 45px;
+  }
+  .discord-cta img{
+    margin-right: 10px;
+    margin-left: 10%;
+  }
+  .discord-button{
+    border: 2px solid #2288BB;
+    border-radius: 50px;
+    background-color: #FFFFFF
+  }
+  .discord-button h3{
+  padding: 13px 27px 13px 27px;
 
-}
-.announcement{
-  height: 550px;
-}
+  }
+  .announcement{
+    height: 550px;
+  }
 
-.announcement-logo{
-  padding-top: 50px;
-  margin: 0 auto;
-}
-.announcement-text h1{
-  margin-top: 125px;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-}
-.announcement-text h4{
-  padding-top: 20px;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-}
-.announcement-cta a{
-  padding-top: 20px;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-}
+  .announcement-logo{
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+  .announcement-text h1{
+    margin-top: 125px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .announcement-text h4{
+    padding-top: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .announcement-cta a{
+    padding-top: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-header{
-  background-color: rgb(0,0,0)
-}
+  .service{
+    margin-top: 25px;
+    margin-bottom: 45px;
+  }
+  .trennstrich{
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
 
-h1{
-  color: rgb(252, 105, 96)
-  font: Bold 60px/71px SF Pro Display;
-}
-.hero-section{
-  background-color: rgb(0,0,0);
-}
-.impact-section{
-  background-color: #404040;
-}
-.menu-left{
-  background-color:rgb(0,0,0)
-}
-.partner-box{
-  height: 322px;
-  width: 322px;
-  border: 1px solid #707070;
-}
-.leadership-box{
-  width: 16.25em;
-  height: 16.25em;
-  border-radius: 15px;
-  border: 1px solid #070707;
-}
-footer{
-  background-color: rgba(78, 78, 78, 1)
-}
-.hero-lead-section{
-  background-color: rgb(0, 0, 0);
-}
-.video{
-  background-color: rgb(0,0,0);
-}
-.trailer{
-  max-height: 720px;
-  width: 1280px;
-}
+  .service-vision{
+    margin-top: 55px;
+    margin-bottom: 25px;
+  }
+  .service-innovation{
+    margin-top: 27px;
+    margin-bottom: 25px;
+  }
+  .service-success{
+    margin-top: 27px;
+    margin-bottom: 55px;
+  }
+  .mentoring-link img{
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 100px;
+    max-width: 100%;
+    max-width: 800px;
+    min-width: 200px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .testimonial{
+    margin-top: 45px;
+    margin-bottom: 65px;
+  }
+  .testimonial-content{
+    margin: 0 auto;
+    text-align: center;
+  }
 
-.name-field{
-  width: 456px;
-  height: 64px;
-  border: 1px solid #707070;
+  footer{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .footer-sitemap{
+    padding-top: 30px;
+  }
+  .footer-sitemap h6{
+    font: 20px SF Pro Text;
+    font-style: Thin;
+    padding-right: 20px;
+    color: #DEDEDE;
+  }
+  .discord-footer{
+    margin-top: 7.5%;
+  }
+  .discord-footer img{
+    margin-right: 25px;
+  }
+  .homestead-cta{
+    margin-top: 22px;
+  }
+
+
+
+
+  header{
+    background-color: rgb(0,0,0)
+  }
+
+  h1{
+    color: rgb(252, 105, 96)
+    font: Bold 60px/71px SF Pro Display;
+  }
+  .hero-section{
+    background-color: rgb(0,0,0);
+  }
+  .impact-section{
+    background-color: #404040;
+  }
+  .menu-left{
+    background-color:rgb(0,0,0)
+  }
+  .partner-box{
+    max-width: 16.25em;
+    height: 16.25em;
+    border: 1px solid #707070;
+  }
+
+  .leadership-box{
+    max-width: 16.25em;
+    height: 16.25em;
+    border-radius: 15px;
+    border: 1px solid #070707;
+  }
+  footer{
+    background-color: rgba(78, 78, 78, 1)
+  }
+  .hero-lead-section{
+    background-color: rgb(0, 0, 0);
+  }
+  .video{
+    background-color: rgb(0,0,0);
+  }
+  .trailer{
+    max-height: 720px;
+    max-width: 1280px;
+  }
+
+  .name-field{
+    max-width: 456px;
+    height: 64px;
+    border: 1px solid #707070;
+  }
+  .mail-field{
+    max-width: 564px;
+    height: 64px;
+    border: 1px solid #707070;
+  }
+  .message-field{
+    max-width: 644px;
+    height: 200px;
+    border: 1px solid #707070;
+  }
+
+
+
+  /* ################# MENTORING ####################################*/
+
+  .hero-lead-section{
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 105px;
+    padding-bottom: 105px;
+  }
+  .hero-lead-section h4{
+    font:  30px SF Pro Text;
+    font-weight: 400;
+    opacity: 0.75;
+    padding-top: 14px;
+    color: #FFFFFF;
+  }
+
+  .hero-lead-section h2{
+    font: Bold 40px SF Pro Text;
+    color: #FFFFFF;
+  }
+
+  .partner-section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .partner-section h1{
+    font: Bold 50px SF Pro Display;
+    padding-bottom: 40px;
+  }
+  .partner-section h4{
+    font: Bold 24px SF Pro Text;
+  }
+
+  .impact-section{
+      padding-top: 30px;
+      padding-bottom: 80px;
+  }
+  .impact-object{
+    padding-top: 30px;
+    text-align: center;
+  }
+  .impact-object h1{
+    font: Bold 89px/106px SF Pro Text;
+    color: #FFFFFF;
+  }
+  .impact-object h4{
+    font:  30px/36px SF Pro Text;
+    color: #C6C6C6;
+  }
+
+  .howitworks-section{
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+
+  .howitworks-section h1{
+    font: Bold 50px SF Pro Display;
+    padding-bottom: 60px;
+  }
+  .howitworks-object{
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 45px;
+  }
+  .howitworks-object h2{
+    font: Bold 45px SF Pro Text;
+
+  }
+  .howitworks-object h4{
+    font:  26px SF Pro Text;
+  }
+
+  .mentor-section{
+    padding-top: 70px;
+    padding-bottom: 110px;
+  }
+  .mentor-section h1{
+    font: Bold 55px SF Pro Display;
+  }
+  .mentor-section h3{
+    font: Bold 40px/48px SF Pro Text;
+    color: #C6C6C6;
+  }
+
+
+
+  /*###################### JOBS ################################################*/
+
+  .hero-section{
+    padding-top: 110px;
+    padding-bottom: 30px;
+  }
+  .hero-section h1{
+    font: Bold 65px SF Pro Text;
+    color: #FFFFFF;
+    padding-left: 12px;
+  }
+
+  .intro{
+    padding-top: 90px;
+    padding-bottom: 85px;
+  }
+  .intro h1{
+    font: Bold 62px SF Pro Display;
+  }
+  .intro h3{
+    font: Bold 40px/48px SF Pro Text;
+    color: #C6C6C6;
+    padding-bottom: 15px;
+  }
+  .intro h4{
+    font: 30px/36px SF Pro Text;
+    padding-top: 15px;
+  }
+
+  .job{
+    padding-top: 35px;
+  }
+  .job-offer h3{
+    font: Bold 30px/36px SF Pro Text;
+    color: #272727;
+    padding-right: 30px;
+  }
+  .job-offer p{
+    font:  30px SF Pro Display;
+  }
+  .job-offer h4{
+    font: Bold 26px/31px SF Pro Text;
+  }
+
+
+
+  /*###################### LEADERSHIP ################################################*/
+
+  .leadership-section{
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .leadership-section h3{
+    font: Bold 30px/36px SF Pro Text;
+    padding-bottom: 30px;
+  }
+  .leadership-section h4{
+    font: 30px/36px SF Pro Rounded;
+    color: #2288BB;
+
+  }
+  .leadership-section h5{
+    font:  24px/29px SF Pro Display;
+
+  }
+  .strich{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: 1px solid #707070;
+  }
+  .bod-section{
+    padding-bottom: 65px;
+  }
+  .bod-section h3{
+    font: Bold 30px/36px SF Pro Text;
+    padding-bottom: 30px;
+  }
+  .bod-section h4{
+    font:  30px/36px SF Pro Rounded;
+    color: #2288BB;
+  }
+  .bod-section h5{
+    font:  24px/29px SF Pro Display;
+  }
+
+
+  .jobs-banner h1{
+    font: Bold 65px/78px SF Pro Display;
+    padding-top: 70px;
+  }
+  .jobs-banner h2{
+    font: Bold 40px/48px SF Pro Text;
+    color: #C6C6C6;
+    padding-bottom: 40px;
+  }
+  .jobs-banner h3{
+    font:  35px/41px SF Pro Display;
+    color: #2288BB;
+  }
+
+
+  /*###################### CONTACT ################################################*/
+
+  .contact-section{
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .discord-badge h3{
+    padding-top: 14px;
+    font: Bold 35px/41px SF Pro Display;
+    color: #818FD9;
+    padding-left: 15px;
+    padding-bottom: 35px;
+  }
+
+
+
+
+  /*###################### LEGAL ################################################*/
+
+  .impressum{
+    padding-top: 60px;
+    padding-bottom: 150px;
+  }
+  .impressum h1{
+    font: Bold 50px/60px SF Pro Text;
+  }
+  .impressum-address{
+    padding-top: 35px;
+  }
+  .impressum-address h4{
+    font: 22px/26px SF Pro Text;
+  }
+  .impressum-contact{
+    padding-top: 20px;
+  }
+  .impressum-contact h4{
+    font: 22px/26px SF Pro Text;
+  }
 }
-.mail-field{
-  width: 564px;
-  height: 64px;
-  border: 1px solid #707070;
+@media (min-width:481px) and (max-width:800px) {
+  #navigation{
+    background-color:rgb(0, 0, 0) ;
+  }
+  #hero{
+    background-color:rgb(0,0,0);
+    height: 100%;
+  }
+  #announcements{
+    background-color:rgba(44, 44, 44, 1)
+  }
+  #footer{
+    background-color:rgba(78, 78, 78, 1);
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  nav{
+    height: 44px;
+    background: #000;
+  }
+
+  .menu{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+  }
+  .menu ul{
+    max-width: 100%;
+    margin: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu ul li{
+    list-style: none;
+  }
+  .menu ul li,
+  .menu ul li a{
+    color: #fff;
+    line-height: 44px;
+    text-decoration: none;
+  }
+
+  /*  CSS Search Script
+  .menu ul li a.menu-site{
+    transform: scale(1);
+    transition: 0.5s;
+    display: block;
+  }
+  .menu ul li a.menu-site.hide-item{
+    transform: scale(0);
+  }
+  */
+  .hero-content{
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-content h1{
+    font: Bold 50px/60px SF Pro Display;
+  }
+  .learn-more {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .learn-more-arrow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero{
+    background-color:rgb(0,0,0);
+    height: 1080px;
+  }
+  .hero-content{
+    padding-top: 10%;
+    margin-bottom: 530px;
+  }
+  .hero-line{
+    margin: 0 auto;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-line h3{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .learn-more{
+    margin: 0 auto;
+    padding-top: 130px;
+    font: Regular 22px/26px SF Pro Text;
+  }
+  .learn-more a{
+    font-family: SF-Pro-Display;
+    text-decoration: none;
+  }
+  .learn-more h4{
+    font-family: SF-Pro-Text;
+    font-size: 30px;
+    font-style: Medium;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .learn-more svg{
+    margin: 0 auto;
+  }
+  .about{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .about-sub{
+    font: Bold 30px/36px SF Pro Text;
+    color: #C6C6C6;
+  }
+  .about h3{
+    font: Semibold 400px SF Pro Rounded;
+  }
+  .about p{
+    padding-top: 40px;
+    font: 22px/26px SF Pro Text;
+  }
+  .leadership-cta{
+    margin: 0 auto;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  .leadership-cta h3 {
+    margin: 0 auto;
+  }
+  .logo{
+    margin-right: auto;
+    margin-left: 4.5%;
+    margin-top: 145px;
+  }
+  .discord-cta{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 45px;
+  }
+  .discord-cta img{
+    margin-right: 10px;
+    margin-left: 10%;
+  }
+  .discord-button{
+    border: 2px solid #2288BB;
+    border-radius: 50px;
+    background-color: #FFFFFF
+  }
+  .discord-button h3{
+  padding: 13px 27px 13px 27px;
+
+  }
+  .announcement{
+    height: 550px;
+  }
+
+  .announcement-logo{
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+  .announcement-text h1{
+    margin-top: 125px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .announcement-text h4{
+    padding-top: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .announcement-cta a{
+    padding-top: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .service{
+    margin-top: 25px;
+    margin-bottom: 45px;
+  }
+  .trennstrich{
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+
+  .service-vision{
+    margin-top: 55px;
+    margin-bottom: 25px;
+  }
+  .service-innovation{
+    margin-top: 27px;
+    margin-bottom: 25px;
+  }
+  .service-success{
+    margin-top: 27px;
+    margin-bottom: 55px;
+  }
+  .mentoring-link img{
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 100px;
+    max-width: 100%;
+    max-width: 800px;
+    min-width: 200px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .testimonial{
+    margin-top: 45px;
+    margin-bottom: 65px;
+  }
+  .testimonial-content{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  footer{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .footer-sitemap{
+    padding-top: 30px;
+  }
+  .footer-sitemap h6{
+    font: 20px SF Pro Text;
+    font-style: Thin;
+    padding-right: 20px;
+    color: #DEDEDE;
+  }
+  .discord-footer{
+    margin-top: 7.5%;
+  }
+  .discord-footer img{
+    margin-right: 25px;
+  }
+  .homestead-cta{
+    margin-top: 22px;
+  }
+
+
+
+
+  header{
+    background-color: rgb(0,0,0)
+  }
+
+  h1{
+    color: rgb(252, 105, 96)
+    font: Bold 60px/71px SF Pro Display;
+  }
+  .hero-section{
+    background-color: rgb(0,0,0);
+  }
+  .impact-section{
+    background-color: #404040;
+  }
+  .menu-left{
+    background-color:rgb(0,0,0)
+  }
+  .partner-box{
+    max-width: 16.25em;
+    height: 16.25em;
+    border: 1px solid #707070;
+  }
+
+  .leadership-box{
+    max-width: 16.25em;
+    height: 16.25em;
+    border-radius: 15px;
+    border: 1px solid #070707;
+  }
+  footer{
+    background-color: rgba(78, 78, 78, 1)
+  }
+  .hero-lead-section{
+    background-color: rgb(0, 0, 0);
+  }
+  .video{
+    background-color: rgb(0,0,0);
+  }
+  .trailer{
+    max-height: 720px;
+    max-width: 1280px;
+  }
+
+  .name-field{
+    max-width: 456px;
+    height: 64px;
+    border: 1px solid #707070;
+  }
+  .mail-field{
+    max-width: 564px;
+    height: 64px;
+    border: 1px solid #707070;
+  }
+  .message-field{
+    max-width: 644px;
+    height: 200px;
+    border: 1px solid #707070;
+  }
+
+
+
+  /* ################# MENTORING ####################################*/
+
+  .hero-lead-section{
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 105px;
+    padding-bottom: 105px;
+  }
+  .hero-lead-section h4{
+    font:  30px SF Pro Text;
+    font-weight: 400;
+    opacity: 0.75;
+    padding-top: 14px;
+    color: #FFFFFF;
+  }
+
+  .hero-lead-section h2{
+    font: Bold 40px SF Pro Text;
+    color: #FFFFFF;
+  }
+
+  .partner-section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .partner-section h1{
+    font: Bold 50px SF Pro Display;
+    padding-bottom: 40px;
+  }
+  .partner-section h4{
+    font: Bold 24px SF Pro Text;
+  }
+
+  .impact-section{
+      padding-top: 30px;
+      padding-bottom: 80px;
+  }
+  .impact-object{
+    padding-top: 30px;
+    text-align: center;
+  }
+  .impact-object h1{
+    font: Bold 89px/106px SF Pro Text;
+    color: #FFFFFF;
+  }
+  .impact-object h4{
+    font:  30px/36px SF Pro Text;
+    color: #C6C6C6;
+  }
+
+  .howitworks-section{
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+
+  .howitworks-section h1{
+    font: Bold 50px SF Pro Display;
+    padding-bottom: 60px;
+  }
+  .howitworks-object{
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 45px;
+  }
+  .howitworks-object h2{
+    font: Bold 45px SF Pro Text;
+
+  }
+  .howitworks-object h4{
+    font:  26px SF Pro Text;
+  }
+
+  .mentor-section{
+    padding-top: 70px;
+    padding-bottom: 110px;
+  }
+  .mentor-section h1{
+    font: Bold 55px SF Pro Display;
+  }
+  .mentor-section h3{
+    font: Bold 40px/48px SF Pro Text;
+    color: #C6C6C6;
+  }
+
+
+
+  /*###################### JOBS ################################################*/
+
+  .hero-section{
+    padding-top: 110px;
+    padding-bottom: 30px;
+  }
+  .hero-section h1{
+    font: Bold 65px SF Pro Text;
+    color: #FFFFFF;
+    padding-left: 12px;
+  }
+
+  .intro{
+    padding-top: 90px;
+    padding-bottom: 85px;
+  }
+  .intro h1{
+    font: Bold 62px SF Pro Display;
+  }
+  .intro h3{
+    font: Bold 40px/48px SF Pro Text;
+    color: #C6C6C6;
+    padding-bottom: 15px;
+  }
+  .intro h4{
+    font: 30px/36px SF Pro Text;
+    padding-top: 15px;
+  }
+
+  .job{
+    padding-top: 35px;
+  }
+  .job-offer h3{
+    font: Bold 30px/36px SF Pro Text;
+    color: #272727;
+    padding-right: 30px;
+  }
+  .job-offer p{
+    font:  30px SF Pro Display;
+  }
+  .job-offer h4{
+    font: Bold 26px/31px SF Pro Text;
+  }
+
+
+
+  /*###################### LEADERSHIP ################################################*/
+
+  .leadership-section{
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .leadership-section h3{
+    font: Bold 30px/36px SF Pro Text;
+    padding-bottom: 30px;
+  }
+  .leadership-section h4{
+    font: 30px/36px SF Pro Rounded;
+    color: #2288BB;
+
+  }
+  .leadership-section h5{
+    font:  24px/29px SF Pro Display;
+
+  }
+  .strich{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: 1px solid #707070;
+  }
+  .bod-section{
+    padding-bottom: 65px;
+  }
+  .bod-section h3{
+    font: Bold 30px/36px SF Pro Text;
+    padding-bottom: 30px;
+  }
+  .bod-section h4{
+    font:  30px/36px SF Pro Rounded;
+    color: #2288BB;
+  }
+  .bod-section h5{
+    font:  24px/29px SF Pro Display;
+  }
+
+
+  .jobs-banner h1{
+    font: Bold 65px/78px SF Pro Display;
+    padding-top: 70px;
+  }
+  .jobs-banner h2{
+    font: Bold 40px/48px SF Pro Text;
+    color: #C6C6C6;
+    padding-bottom: 40px;
+  }
+  .jobs-banner h3{
+    font:  35px/41px SF Pro Display;
+    color: #2288BB;
+  }
+
+
+  /*###################### CONTACT ################################################*/
+
+  .contact-section{
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .discord-badge h3{
+    padding-top: 14px;
+    font: Bold 35px/41px SF Pro Display;
+    color: #818FD9;
+    padding-left: 15px;
+    padding-bottom: 35px;
+  }
+
+
+
+
+  /*###################### LEGAL ################################################*/
+
+  .impressum{
+    padding-top: 60px;
+    padding-bottom: 150px;
+  }
+  .impressum h1{
+    font: Bold 50px/60px SF Pro Text;
+  }
+  .impressum-address{
+    padding-top: 35px;
+  }
+  .impressum-address h4{
+    font: 22px/26px SF Pro Text;
+  }
+  .impressum-contact{
+    padding-top: 20px;
+  }
+  .impressum-contact h4{
+    font: 22px/26px SF Pro Text;
+  }
 }
-.message-field{
-  width: 644px;
-  height: 200px;
-  border: 1px solid #707070;
+@media (min-width: 801px) and (max-width: 1024px){
+  #navigation{
+    background-color:rgb(0, 0, 0) ;
+  }
+  #hero{
+    background-color:rgb(0,0,0);
+    height: 100%;
+  }
+  #announcements{
+    background-color:rgba(44, 44, 44, 1)
+  }
+  #footer{
+    background-color:rgba(78, 78, 78, 1);
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  nav{
+    height: 44px;
+    background: #000;
+  }
+
+  .menu{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+  }
+  .menu ul{
+    max-width: 100%;
+    margin: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu ul li{
+    list-style: none;
+  }
+  .menu ul li,
+  .menu ul li a{
+    color: #fff;
+    line-height: 44px;
+    text-decoration: none;
+  }
+
+  /*  CSS Search Script
+  .menu ul li a.menu-site{
+    transform: scale(1);
+    transition: 0.5s;
+    display: block;
+  }
+  .menu ul li a.menu-site.hide-item{
+    transform: scale(0);
+  }
+  */
+  .hero-content{
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-content h1{
+    font: Bold 50px/60px SF Pro Display;
+  }
+  .learn-more {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .learn-more-arrow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero{
+    background-color:rgb(0,0,0);
+    height: 1080px;
+  }
+  .hero-content{
+    padding-top: 10%;
+    margin-bottom: 530px;
+  }
+  .hero-line{
+    margin: 0 auto;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-line h3{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .learn-more{
+    margin: 0 auto;
+    padding-top: 130px;
+    font: Regular 22px/26px SF Pro Text;
+  }
+  .learn-more a{
+    font-family: SF-Pro-Display;
+    text-decoration: none;
+  }
+  .learn-more h4{
+    font-family: SF-Pro-Text;
+    font-size: 30px;
+    font-style: Medium;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .learn-more svg{
+    margin: 0 auto;
+  }
+  .about{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .about-sub{
+    font: Bold 30px/36px SF Pro Text;
+    color: #C6C6C6;
+  }
+  .about h3{
+    font: Semibold 400px SF Pro Rounded;
+  }
+  .about p{
+    padding-top: 40px;
+    font: 22px/26px SF Pro Text;
+  }
+  .leadership-cta{
+    margin: 0 auto;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  .leadership-cta h3 {
+    margin: 0 auto;
+  }
+  .logo{
+    margin-right: auto;
+    margin-left: 4.5%;
+    margin-top: 145px;
+  }
+  .discord-cta{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 45px;
+  }
+  .discord-cta img{
+    margin-right: 10px;
+    margin-left: 10%;
+  }
+  .discord-button{
+    border: 2px solid #2288BB;
+    border-radius: 50px;
+    background-color: #FFFFFF
+  }
+  .discord-button h3{
+  padding: 13px 27px 13px 27px;
+
+  }
+  .announcement{
+    height: 550px;
+  }
+
+  .announcement-logo{
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+  .announcement-text h1{
+    margin-top: 125px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .announcement-text h4{
+    padding-top: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .announcement-cta a{
+    padding-top: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .service{
+    margin-top: 25px;
+    margin-bottom: 45px;
+  }
+  .trennstrich{
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+
+  .service-vision{
+    margin-top: 55px;
+    margin-bottom: 25px;
+  }
+  .service-innovation{
+    margin-top: 27px;
+    margin-bottom: 25px;
+  }
+  .service-success{
+    margin-top: 27px;
+    margin-bottom: 55px;
+  }
+  .mentoring-link img{
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 100px;
+    max-width: 100%;
+    max-width: 800px;
+    min-width: 200px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .testimonial{
+    margin-top: 45px;
+    margin-bottom: 65px;
+  }
+  .testimonial-content{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  footer{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .footer-sitemap{
+    padding-top: 30px;
+  }
+  .footer-sitemap h6{
+    font: 20px SF Pro Text;
+    font-style: Thin;
+    padding-right: 20px;
+    color: #DEDEDE;
+  }
+  .discord-footer{
+    margin-top: 7.5%;
+  }
+  .discord-footer img{
+    margin-right: 25px;
+  }
+  .homestead-cta{
+    margin-top: 22px;
+  }
+
+
+
+
+  header{
+    background-color: rgb(0,0,0)
+  }
+
+  h1{
+    color: rgb(252, 105, 96)
+    font: Bold 60px/71px SF Pro Display;
+  }
+  .hero-section{
+    background-color: rgb(0,0,0);
+  }
+  .impact-section{
+    background-color: #404040;
+  }
+  .menu-left{
+    background-color:rgb(0,0,0)
+  }
+  .partner-box{
+    max-width: 16.25em;
+    height: 16.25em;
+    border: 1px solid #707070;
+  }
+
+  .leadership-box{
+    max-width: 16.25em;
+    height: 16.25em;
+    border-radius: 15px;
+    border: 1px solid #070707;
+  }
+  footer{
+    background-color: rgba(78, 78, 78, 1)
+  }
+  .hero-lead-section{
+    background-color: rgb(0, 0, 0);
+  }
+  .video{
+    background-color: rgb(0,0,0);
+  }
+  .trailer{
+    max-height: 720px;
+    max-width: 1280px;
+  }
+
+  .name-field{
+    max-width: 456px;
+    height: 64px;
+    border: 1px solid #707070;
+  }
+  .mail-field{
+    max-width: 564px;
+    height: 64px;
+    border: 1px solid #707070;
+  }
+  .message-field{
+    max-width: 644px;
+    height: 200px;
+    border: 1px solid #707070;
+  }
+
+
+
+  /* ################# MENTORING ####################################*/
+
+  .hero-lead-section{
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 105px;
+    padding-bottom: 105px;
+  }
+  .hero-lead-section h4{
+    font:  30px SF Pro Text;
+    font-weight: 400;
+    opacity: 0.75;
+    padding-top: 14px;
+    color: #FFFFFF;
+  }
+
+  .hero-lead-section h2{
+    font: Bold 40px SF Pro Text;
+    color: #FFFFFF;
+  }
+
+  .partner-section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .partner-section h1{
+    font: Bold 50px SF Pro Display;
+    padding-bottom: 40px;
+  }
+  .partner-section h4{
+    font: Bold 24px SF Pro Text;
+  }
+
+  .impact-section{
+      padding-top: 30px;
+      padding-bottom: 80px;
+  }
+  .impact-object{
+    padding-top: 30px;
+    text-align: center;
+  }
+  .impact-object h1{
+    font: Bold 89px/106px SF Pro Text;
+    color: #FFFFFF;
+  }
+  .impact-object h4{
+    font:  30px/36px SF Pro Text;
+    color: #C6C6C6;
+  }
+
+  .howitworks-section{
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+
+  .howitworks-section h1{
+    font: Bold 50px SF Pro Display;
+    padding-bottom: 60px;
+  }
+  .howitworks-object{
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 45px;
+  }
+  .howitworks-object h2{
+    font: Bold 45px SF Pro Text;
+
+  }
+  .howitworks-object h4{
+    font:  26px SF Pro Text;
+  }
+
+  .mentor-section{
+    padding-top: 70px;
+    padding-bottom: 110px;
+  }
+  .mentor-section h1{
+    font: Bold 55px SF Pro Display;
+  }
+  .mentor-section h3{
+    font: Bold 40px/48px SF Pro Text;
+    color: #C6C6C6;
+  }
+
+
+
+  /*###################### JOBS ################################################*/
+
+  .hero-section{
+    padding-top: 110px;
+    padding-bottom: 30px;
+  }
+  .hero-section h1{
+    font: Bold 65px SF Pro Text;
+    color: #FFFFFF;
+    padding-left: 12px;
+  }
+
+  .intro{
+    padding-top: 90px;
+    padding-bottom: 85px;
+  }
+  .intro h1{
+    font: Bold 62px SF Pro Display;
+  }
+  .intro h3{
+    font: Bold 40px/48px SF Pro Text;
+    color: #C6C6C6;
+    padding-bottom: 15px;
+  }
+  .intro h4{
+    font: 30px/36px SF Pro Text;
+    padding-top: 15px;
+  }
+
+  .job{
+    padding-top: 35px;
+  }
+  .job-offer h3{
+    font: Bold 30px/36px SF Pro Text;
+    color: #272727;
+    padding-right: 30px;
+  }
+  .job-offer p{
+    font:  30px SF Pro Display;
+  }
+  .job-offer h4{
+    font: Bold 26px/31px SF Pro Text;
+  }
+
+
+
+  /*###################### LEADERSHIP ################################################*/
+
+  .leadership-section{
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .leadership-section h3{
+    font: Bold 30px/36px SF Pro Text;
+    padding-bottom: 30px;
+  }
+  .leadership-section h4{
+    font: 30px/36px SF Pro Rounded;
+    color: #2288BB;
+
+  }
+  .leadership-section h5{
+    font:  24px/29px SF Pro Display;
+
+  }
+  .strich{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: 1px solid #707070;
+  }
+  .bod-section{
+    padding-bottom: 65px;
+  }
+  .bod-section h3{
+    font: Bold 30px/36px SF Pro Text;
+    padding-bottom: 30px;
+  }
+  .bod-section h4{
+    font:  30px/36px SF Pro Rounded;
+    color: #2288BB;
+  }
+  .bod-section h5{
+    font:  24px/29px SF Pro Display;
+  }
+
+
+  .jobs-banner h1{
+    font: Bold 65px/78px SF Pro Display;
+    padding-top: 70px;
+  }
+  .jobs-banner h2{
+    font: Bold 40px/48px SF Pro Text;
+    color: #C6C6C6;
+    padding-bottom: 40px;
+  }
+  .jobs-banner h3{
+    font:  35px/41px SF Pro Display;
+    color: #2288BB;
+  }
+
+
+  /*###################### CONTACT ################################################*/
+
+  .contact-section{
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .discord-badge h3{
+    padding-top: 14px;
+    font: Bold 35px/41px SF Pro Display;
+    color: #818FD9;
+    padding-left: 15px;
+    padding-bottom: 35px;
+  }
+
+
+
+
+  /*###################### LEGAL ################################################*/
+
+  .impressum{
+    padding-top: 60px;
+    padding-bottom: 150px;
+  }
+  .impressum h1{
+    font: Bold 50px/60px SF Pro Text;
+  }
+  .impressum-address{
+    padding-top: 35px;
+  }
+  .impressum-address h4{
+    font: 22px/26px SF Pro Text;
+  }
+  .impressum-contact{
+    padding-top: 20px;
+  }
+  .impressum-contact h4{
+    font: 22px/26px SF Pro Text;
+  }
+}
+@media (min-width: 1024px) and (max-width:1280px){
+  #navigation{
+    background-color:rgb(0, 0, 0) ;
+  }
+  #hero{
+    background-color:rgb(0,0,0);
+    height: 100%;
+  }
+  #announcements{
+    background-color:rgba(44, 44, 44, 1)
+  }
+  #footer{
+    background-color:rgba(78, 78, 78, 1);
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  nav{
+    height: 44px;
+    background: #000;
+  }
+
+  .menu{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+  }
+  .menu ul{
+    max-width: 100%;
+    margin: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu ul li{
+    list-style: none;
+  }
+  .menu ul li,
+  .menu ul li a{
+    color: #fff;
+    line-height: 44px;
+    text-decoration: none;
+  }
+
+  /*  CSS Search Script
+  .menu ul li a.menu-site{
+    transform: scale(1);
+    transition: 0.5s;
+    display: block;
+  }
+  .menu ul li a.menu-site.hide-item{
+    transform: scale(0);
+  }
+  */
+  .hero-content{
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-content h1{
+    font: Bold 50px/60px SF Pro Display;
+  }
+  .learn-more {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .learn-more-arrow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero{
+    background-color:rgb(0,0,0);
+    height: 1080px;
+  }
+  .hero-content{
+    padding-top: 10%;
+    margin-bottom: 530px;
+  }
+  .hero-line{
+    margin: 0 auto;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-line h3{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .learn-more{
+    margin: 0 auto;
+    padding-top: 130px;
+    font: Regular 22px/26px SF Pro Text;
+  }
+  .learn-more a{
+    font-family: SF-Pro-Display;
+    text-decoration: none;
+  }
+  .learn-more h4{
+    font-family: SF-Pro-Text;
+    font-size: 30px;
+    font-style: Medium;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .learn-more svg{
+    margin: 0 auto;
+  }
+  .about{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .about-sub{
+    font: Bold 30px/36px SF Pro Text;
+    color: #C6C6C6;
+  }
+  .about h3{
+    font: Semibold 400px SF Pro Rounded;
+  }
+  .about p{
+    padding-top: 40px;
+    font: 22px/26px SF Pro Text;
+  }
+  .leadership-cta{
+    margin: 0 auto;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  .leadership-cta h3 {
+    margin: 0 auto;
+  }
+  .logo{
+    margin-right: auto;
+    margin-left: 4.5%;
+    margin-top: 145px;
+  }
+  .discord-cta{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 45px;
+  }
+  .discord-cta img{
+    margin-right: 10px;
+    margin-left: 10%;
+  }
+  .discord-button{
+    border: 2px solid #2288BB;
+    border-radius: 50px;
+    background-color: #FFFFFF
+  }
+  .discord-button h3{
+  padding: 13px 27px 13px 27px;
+
+  }
+  .announcement{
+    height: 550px;
+  }
+
+  .announcement-logo{
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+  .announcement-text h1{
+    margin-top: 125px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .announcement-text h4{
+    padding-top: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .announcement-cta a{
+    padding-top: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .service{
+    margin-top: 25px;
+    margin-bottom: 45px;
+  }
+  .trennstrich{
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+
+  .service-vision{
+    margin-top: 55px;
+    margin-bottom: 25px;
+  }
+  .service-innovation{
+    margin-top: 27px;
+    margin-bottom: 25px;
+  }
+  .service-success{
+    margin-top: 27px;
+    margin-bottom: 55px;
+  }
+  .mentoring-link img{
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 100px;
+    max-width: 100%;
+    max-width: 800px;
+    min-width: 200px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .testimonial{
+    margin-top: 45px;
+    margin-bottom: 65px;
+  }
+  .testimonial-content{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  footer{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .footer-sitemap{
+    padding-top: 30px;
+  }
+  .footer-sitemap h6{
+    font: 20px SF Pro Text;
+    font-style: Thin;
+    padding-right: 20px;
+    color: #DEDEDE;
+  }
+  .discord-footer{
+    margin-top: 7.5%;
+  }
+  .discord-footer img{
+    margin-right: 25px;
+  }
+  .homestead-cta{
+    margin-top: 22px;
+  }
+
+
+
+
+  header{
+    background-color: rgb(0,0,0)
+  }
+
+  h1{
+    color: rgb(252, 105, 96)
+    font: Bold 60px/71px SF Pro Display;
+  }
+  .hero-section{
+    background-color: rgb(0,0,0);
+  }
+  .impact-section{
+    background-color: #404040;
+  }
+  .menu-left{
+    background-color:rgb(0,0,0)
+  }
+  .partner-box{
+    max-width: 16.25em;
+    height: 16.25em;
+    border: 1px solid #707070;
+  }
+
+  .leadership-box{
+    max-width: 16.25em;
+    height: 16.25em;
+    border-radius: 15px;
+    border: 1px solid #070707;
+  }
+  footer{
+    background-color: rgba(78, 78, 78, 1)
+  }
+  .hero-lead-section{
+    background-color: rgb(0, 0, 0);
+  }
+  .video{
+    background-color: rgb(0,0,0);
+  }
+  .trailer{
+    max-height: 720px;
+    max-width: 1280px;
+  }
+
+  .name-field{
+    max-width: 456px;
+    height: 64px;
+    border: 1px solid #707070;
+  }
+  .mail-field{
+    max-width: 564px;
+    height: 64px;
+    border: 1px solid #707070;
+  }
+  .message-field{
+    max-width: 644px;
+    height: 200px;
+    border: 1px solid #707070;
+  }
+
+
+
+  /* ################# MENTORING ####################################*/
+
+  .hero-lead-section{
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 105px;
+    padding-bottom: 105px;
+  }
+  .hero-lead-section h4{
+    font:  30px SF Pro Text;
+    font-weight: 400;
+    opacity: 0.75;
+    padding-top: 14px;
+    color: #FFFFFF;
+  }
+
+  .hero-lead-section h2{
+    font: Bold 40px SF Pro Text;
+    color: #FFFFFF;
+  }
+
+  .partner-section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .partner-section h1{
+    font: Bold 50px SF Pro Display;
+    padding-bottom: 40px;
+  }
+  .partner-section h4{
+    font: Bold 24px SF Pro Text;
+  }
+
+  .impact-section{
+      padding-top: 30px;
+      padding-bottom: 80px;
+  }
+  .impact-object{
+    padding-top: 30px;
+    text-align: center;
+  }
+  .impact-object h1{
+    font: Bold 89px/106px SF Pro Text;
+    color: #FFFFFF;
+  }
+  .impact-object h4{
+    font:  30px/36px SF Pro Text;
+    color: #C6C6C6;
+  }
+
+  .howitworks-section{
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+
+  .howitworks-section h1{
+    font: Bold 50px SF Pro Display;
+    padding-bottom: 60px;
+  }
+  .howitworks-object{
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 45px;
+  }
+  .howitworks-object h2{
+    font: Bold 45px SF Pro Text;
+
+  }
+  .howitworks-object h4{
+    font:  26px SF Pro Text;
+  }
+
+  .mentor-section{
+    padding-top: 70px;
+    padding-bottom: 110px;
+  }
+  .mentor-section h1{
+    font: Bold 55px SF Pro Display;
+  }
+  .mentor-section h3{
+    font: Bold 40px/48px SF Pro Text;
+    color: #C6C6C6;
+  }
+
+
+
+  /*###################### JOBS ################################################*/
+
+  .hero-section{
+    padding-top: 110px;
+    padding-bottom: 30px;
+  }
+  .hero-section h1{
+    font: Bold 65px SF Pro Text;
+    color: #FFFFFF;
+    padding-left: 12px;
+  }
+
+  .intro{
+    padding-top: 90px;
+    padding-bottom: 85px;
+  }
+  .intro h1{
+    font: Bold 62px SF Pro Display;
+  }
+  .intro h3{
+    font: Bold 40px/48px SF Pro Text;
+    color: #C6C6C6;
+    padding-bottom: 15px;
+  }
+  .intro h4{
+    font: 30px/36px SF Pro Text;
+    padding-top: 15px;
+  }
+
+  .job{
+    padding-top: 35px;
+  }
+  .job-offer h3{
+    font: Bold 30px/36px SF Pro Text;
+    color: #272727;
+    padding-right: 30px;
+  }
+  .job-offer p{
+    font:  30px SF Pro Display;
+  }
+  .job-offer h4{
+    font: Bold 26px/31px SF Pro Text;
+  }
+
+
+
+  /*###################### LEADERSHIP ################################################*/
+
+  .leadership-section{
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .leadership-section h3{
+    font: Bold 30px/36px SF Pro Text;
+    padding-bottom: 30px;
+  }
+  .leadership-section h4{
+    font: 30px/36px SF Pro Rounded;
+    color: #2288BB;
+
+  }
+  .leadership-section h5{
+    font:  24px/29px SF Pro Display;
+
+  }
+  .strich{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: 1px solid #707070;
+  }
+  .bod-section{
+    padding-bottom: 65px;
+  }
+  .bod-section h3{
+    font: Bold 30px/36px SF Pro Text;
+    padding-bottom: 30px;
+  }
+  .bod-section h4{
+    font:  30px/36px SF Pro Rounded;
+    color: #2288BB;
+  }
+  .bod-section h5{
+    font:  24px/29px SF Pro Display;
+  }
+
+
+  .jobs-banner h1{
+    font: Bold 65px/78px SF Pro Display;
+    padding-top: 70px;
+  }
+  .jobs-banner h2{
+    font: Bold 40px/48px SF Pro Text;
+    color: #C6C6C6;
+    padding-bottom: 40px;
+  }
+  .jobs-banner h3{
+    font:  35px/41px SF Pro Display;
+    color: #2288BB;
+  }
+
+
+  /*###################### CONTACT ################################################*/
+
+  .contact-section{
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .discord-badge h3{
+    padding-top: 14px;
+    font: Bold 35px/41px SF Pro Display;
+    color: #818FD9;
+    padding-left: 15px;
+    padding-bottom: 35px;
+  }
+
+
+
+
+  /*###################### LEGAL ################################################*/
+
+  .impressum{
+    padding-top: 60px;
+    padding-bottom: 150px;
+  }
+  .impressum h1{
+    font: Bold 50px/60px SF Pro Text;
+  }
+  .impressum-address{
+    padding-top: 35px;
+  }
+  .impressum-address h4{
+    font: 22px/26px SF Pro Text;
+  }
+  .impressum-contact{
+    padding-top: 20px;
+  }
+  .impressum-contact h4{
+    font: 22px/26px SF Pro Text;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  #navigation{
+    background-color:rgb(0, 0, 0) ;
+  }
+  #hero{
+    background-color:rgb(0,0,0);
+    height: 100%;
+  }
+  #announcements{
+    background-color:rgba(44, 44, 44, 1)
+  }
+  #footer{
+    background-color:rgba(78, 78, 78, 1);
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  nav{
+    height: 44px;
+    background: #000;
+  }
+
+  .menu{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+  }
+  .menu ul{
+    max-width: 100%;
+    margin: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu ul li{
+    list-style: none;
+  }
+  .menu ul li,
+  .menu ul li a{
+    color: #fff;
+    line-height: 44px;
+    text-decoration: none;
+  }
+
+  /*  CSS Search Script
+  .menu ul li a.menu-site{
+    transform: scale(1);
+    transition: 0.5s;
+    display: block;
+  }
+  .menu ul li a.menu-site.hide-item{
+    transform: scale(0);
+  }
+  */
+  .hero-content{
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-content h1{
+    font: Bold 50px/60px SF Pro Display;
+  }
+  .learn-more {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .learn-more-arrow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero{
+    background-color:rgb(0,0,0);
+    height: 1080px;
+  }
+  .hero-content{
+    padding-top: 10%;
+    margin-bottom: 530px;
+  }
+  .hero-line{
+    margin: 0 auto;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-line h3{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font: Bold 30px/36px SF Pro Text; color: #C6C6C6; opacity: 1;
+  }
+  .learn-more{
+    margin: 0 auto;
+    padding-top: 130px;
+    font: Regular 22px/26px SF Pro Text;
+  }
+  .learn-more a{
+    font-family: SF-Pro-Display;
+    text-decoration: none;
+  }
+  .learn-more h4{
+    font-family: SF-Pro-Text;
+    font-size: 30px;
+    font-style: Medium;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .learn-more svg{
+    margin: 0 auto;
+  }
+  .about{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .about h1{
+    font: Bold 60px/71px SF Pro Display;
+  }
+  .about-sub{
+    font: Bold 30px/36px SF Pro Text;
+    color: #C6C6C6;
+  }
+  .about h3{
+    font: Semibold 400px SF Pro Rounded;
+  }
+  .about p{
+    padding-top: 40px;
+    font: 22px/26px SF Pro Text;
+  }
+  .leadership-cta{
+    margin: 0 auto;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  .leadership-cta h3 {
+    margin: 0 auto;
+  }
+  .logo{
+    margin-right: auto;
+    margin-left: 4.5%;
+    margin-top: 145px;
+  }
+  .discord-cta{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 45px;
+  }
+  .discord-cta img{
+    margin-right: 10px;
+    margin-left: 10%;
+  }
+  .discord-button{
+    border: 2px solid #2288BB;
+    border-radius: 50px;
+    background-color: #FFFFFF
+  }
+  .discord-button h3{
+  padding: 13px 27px 13px 27px;
+
+  }
+  .announcement{
+    height: 550px;
+  }
+
+  .announcement-logo{
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+  .announcement-text h1{
+    margin-top: 125px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .announcement-text h4{
+    padding-top: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .announcement-cta a{
+    padding-top: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .service{
+    margin-top: 25px;
+    margin-bottom: 45px;
+  }
+  .trennstrich{
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+
+  .service-vision{
+    margin-top: 55px;
+    margin-bottom: 25px;
+  }
+  .service-innovation{
+    margin-top: 27px;
+    margin-bottom: 25px;
+  }
+  .service-success{
+    margin-top: 27px;
+    margin-bottom: 55px;
+  }
+  .mentoring-link img{
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 100px;
+    max-width: 100%;
+    max-width: 800px;
+    min-width: 200px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .testimonial{
+    margin-top: 45px;
+    margin-bottom: 65px;
+  }
+  .testimonial-content{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  footer{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .footer-sitemap{
+    padding-top: 30px;
+  }
+  .footer-sitemap h6{
+    font: 20px SF Pro Text;
+    font-style: Thin;
+    padding-right: 20px;
+    color: #DEDEDE;
+  }
+  .discord-footer{
+    margin-top: 7.5%;
+  }
+  .discord-footer img{
+    margin-right: 25px;
+  }
+  .homestead-cta{
+    margin-top: 22px;
+  }
+
+
+
+
+  header{
+    background-color: rgb(0,0,0)
+  }
+
+  h1{
+    color: rgb(252, 105, 96)
+    font: Bold 60px/71px SF Pro Display;
+  }
+  .hero-section{
+    background-color: rgb(0,0,0);
+  }
+  .impact-section{
+    background-color: #404040;
+  }
+  .menu-left{
+    background-color:rgb(0,0,0)
+  }
+  .partner-box{
+    max-width: 16.25em;
+    height: 16.25em;
+    border: 1px solid #707070;
+  }
+
+  .leadership-box{
+    max-width: 16.25em;
+    height: 16.25em;
+    border-radius: 15px;
+    border: 1px solid #070707;
+  }
+  footer{
+    background-color: rgba(78, 78, 78, 1)
+  }
+  .hero-lead-section{
+    background-color: rgb(0, 0, 0);
+  }
+  .video{
+    background-color: rgb(0,0,0);
+  }
+  .trailer{
+    max-height: 720px;
+    max-width: 1280px;
+  }
+
+  .name-field{
+    max-width: 456px;
+    height: 64px;
+    border: 1px solid #707070;
+  }
+  .mail-field{
+    max-width: 564px;
+    height: 64px;
+    border: 1px solid #707070;
+  }
+  .message-field{
+    max-width: 644px;
+    height: 200px;
+    border: 1px solid #707070;
+  }
+
+
+
+  /* ################# MENTORING ####################################*/
+
+  .hero-lead-section{
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 105px;
+    padding-bottom: 105px;
+  }
+  .hero-lead-section h4{
+    font:  30px SF Pro Text;
+    font-weight: 400;
+    opacity: 0.75;
+    padding-top: 14px;
+    color: #FFFFFF;
+  }
+
+  .hero-lead-section h2{
+    font: Bold 40px SF Pro Text;
+    color: #FFFFFF;
+  }
+
+  .partner-section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .partner-section h1{
+    font: Bold 50px SF Pro Display;
+    padding-bottom: 40px;
+  }
+  .partner-section h4{
+    font: Bold 24px SF Pro Text;
+  }
+
+  .impact-section{
+      padding-top: 30px;
+      padding-bottom: 80px;
+  }
+  .impact-object{
+    padding-top: 30px;
+    text-align: center;
+  }
+  .impact-object h1{
+    font: Bold 89px/106px SF Pro Text;
+    color: #FFFFFF;
+  }
+  .impact-object h4{
+    font:  30px/36px SF Pro Text;
+    color: #C6C6C6;
+  }
+
+  .howitworks-section{
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+
+  .howitworks-section h1{
+    font: Bold 50px SF Pro Display;
+    padding-bottom: 60px;
+  }
+  .howitworks-object{
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 45px;
+  }
+  .howitworks-object h2{
+    font: Bold 45px SF Pro Text;
+
+  }
+  .howitworks-object h4{
+    font:  26px SF Pro Text;
+  }
+
+  .mentor-section{
+    padding-top: 70px;
+    padding-bottom: 110px;
+  }
+  .mentor-section h1{
+    font: Bold 55px SF Pro Display;
+  }
+  .mentor-section h3{
+    font: Bold 40px/48px SF Pro Text;
+    color: #C6C6C6;
+  }
+
+
+
+  /*###################### JOBS ################################################*/
+
+  .hero-section{
+    padding-top: 110px;
+    padding-bottom: 30px;
+  }
+  .hero-section h1{
+    font: Bold 65px SF Pro Text;
+    color: #FFFFFF;
+    padding-left: 12px;
+  }
+
+  .intro{
+    padding-top: 90px;
+    padding-bottom: 85px;
+  }
+  .intro h1{
+    font: Bold 62px SF Pro Display;
+  }
+  .intro h3{
+    font: Bold 40px/48px SF Pro Text;
+    color: #C6C6C6;
+    padding-bottom: 15px;
+  }
+  .intro h4{
+    font: 30px/36px SF Pro Text;
+    padding-top: 15px;
+  }
+
+  .job{
+    padding-top: 35px;
+  }
+  .job-offer h3{
+    font: Bold 30px/36px SF Pro Text;
+    color: #272727;
+    padding-right: 30px;
+  }
+  .job-offer p{
+    font:  30px SF Pro Display;
+  }
+  .job-offer h4{
+    font: Bold 26px/31px SF Pro Text;
+  }
+
+
+
+  /*###################### LEADERSHIP ################################################*/
+
+  .leadership-section{
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .leadership-section h3{
+    font: Bold 30px/36px SF Pro Text;
+    padding-bottom: 30px;
+  }
+  .leadership-section h4{
+    font: 30px/36px SF Pro Rounded;
+    color: #2288BB;
+
+  }
+  .leadership-section h5{
+    font:  24px/29px SF Pro Display;
+
+  }
+  .strich{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: 1px solid #707070;
+  }
+  .bod-section{
+    padding-bottom: 65px;
+  }
+  .bod-section h3{
+    font: Bold 30px/36px SF Pro Text;
+    padding-bottom: 30px;
+  }
+  .bod-section h4{
+    font:  30px/36px SF Pro Rounded;
+    color: #2288BB;
+  }
+  .bod-section h5{
+    font:  24px/29px SF Pro Display;
+  }
+
+
+  .jobs-banner h1{
+    font: Bold 65px/78px SF Pro Display;
+    padding-top: 70px;
+  }
+  .jobs-banner h2{
+    font: Bold 40px/48px SF Pro Text;
+    color: #C6C6C6;
+    padding-bottom: 40px;
+  }
+  .jobs-banner h3{
+    font:  35px/41px SF Pro Display;
+    color: #2288BB;
+  }
+
+
+  /*###################### CONTACT ################################################*/
+
+  .contact-section{
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .discord-badge h3{
+    padding-top: 14px;
+    font: Bold 35px/41px SF Pro Display;
+    color: #818FD9;
+    padding-left: 15px;
+    padding-bottom: 35px;
+  }
+
+
+
+
+  /*###################### LEGAL ################################################*/
+
+  .impressum{
+    padding-top: 60px;
+    padding-bottom: 150px;
+  }
+  .impressum h1{
+    font: Bold 50px/60px SF Pro Text;
+  }
+  .impressum-address{
+    padding-top: 35px;
+  }
+  .impressum-address h4{
+    font: 22px/26px SF Pro Text;
+  }
+  .impressum-contact{
+    padding-top: 20px;
+  }
+  .impressum-contact h4{
+    font: 22px/26px SF Pro Text;
+  }
+
 }
