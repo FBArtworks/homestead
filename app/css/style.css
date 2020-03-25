@@ -24,7 +24,7 @@ header{
   line-height: 70px;
   font:  22px/26px SF Pro Text;
 }
-label{
+.nav label{
   margin: 0 40px 0 0;
   font-size: 26px;
   line-height: 70px;
@@ -46,6 +46,31 @@ label{
 
 #toggle{
   display: none;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%; /* ratio 16x9 */
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+.embed-container iframe {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* ratio 4x3 */
+.embed-container.ratio4x3 {
+  padding-bottom: 75%;
 }
 
 .intro h4{
@@ -71,6 +96,19 @@ label{
 }
 .privacy-policy p{
   font: 22px/26px SF Pro Text
+}
+
+.copyright{
+  background-color: rgb(33, 33, 33);
+    margin-top: 40px;
+}
+.copyright h6{
+  font: 15px SF Pro Display;
+  text-align: center;
+  color: #FFFFFF;
+  line-height: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 /*  SF COMPACT DISPLAY  */
@@ -509,7 +547,7 @@ label{
 
 }
 @media (max-width:480px) {
-  label{
+  .nav label{
     display: block;
     cursor: pointer;
     color: #FFFFFF;
@@ -642,10 +680,7 @@ label{
     text-decoration: none;
   }
   .learn-more h4{
-    font-family: SF-Pro-Text;
-    font-size: 23px;
-    font-style: Medium;
-    text-decoration: none;
+    font: 22px/26px SF Pro Text;
     color: #FFFFFF;
   }
   .learn-more svg{
@@ -1033,6 +1068,8 @@ label{
   .intro{
     padding-top: 90px;
     padding-bottom: 85px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
   .intro h1{
     font: Bold 40px/48px SF Pro Display;
@@ -1192,9 +1229,10 @@ label{
   }
 }
 @media (min-width:481px) and (max-width:800px) {
-  label{
+  .nav label{
     display: block;
     cursor: pointer;
+    color: #FFFFFF;
   }
   .menu{
     text-align: center;
@@ -1286,10 +1324,7 @@ label{
     text-decoration: none;
   }
   .learn-more h4{
-    font-family: SF-Pro-Text;
-    font-size: 30px;
-    font-style: Medium;
-    text-decoration: none;
+    font: 22px/26px SF Pro Text;
     color: #FFFFFF;
   }
   .learn-more svg{
@@ -1436,6 +1471,8 @@ label{
     margin-right: auto;
     padding-top: 30px;
     padding-bottom: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
   .mentoring-link h4{
     font:  22px/26px SF Compact Display;
@@ -1521,6 +1558,8 @@ label{
   }
   .hero-lead-section{
     background-color: rgb(0, 0, 0);
+    padding-right: 30px;
+    padding-left: 30px;
   }
   .video{
     background-color: rgb(0,0,0);
@@ -1665,6 +1704,8 @@ label{
   .intro{
     padding-top: 90px;
     padding-bottom: 85px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
   .intro h1{
     font: Bold 40px/48px SF Pro Display;
@@ -1917,10 +1958,7 @@ label{
     text-decoration: none;
   }
   .learn-more h4{
-    font-family: SF-Pro-Text;
-    font-size: 30px;
-    font-style: Medium;
-    text-decoration: none;
+    font: 22px/26px SF Pro Text;
     color: #FFFFFF;
   }
   .learn-more svg{
@@ -2537,10 +2575,7 @@ label{
     text-decoration: none;
   }
   .learn-more h4{
-    font-family: SF-Pro-Text;
-    font-size: 30px;
-    font-style: Medium;
-    text-decoration: none;
+    font: 22px/26px SF Pro Text;
     color: #FFFFFF;
   }
   .learn-more svg{
@@ -3158,10 +3193,7 @@ label{
     text-decoration: none;
   }
   .learn-more h4{
-    font-family: SF-Pro-Text;
-    font-size: 30px;
-    font-style: Medium;
-    text-decoration: none;
+    font: 22px/26px SF Pro Text;
     color: #FFFFFF;
   }
   .learn-more svg{
@@ -3778,10 +3810,7 @@ label{
     text-decoration: none;
   }
   .learn-more h4{
-    font-family: SF-Pro-Text;
-    font-size: 30px;
-    font-style: Medium;
-    text-decoration: none;
+    font: 22px/26px SF Pro Text;
     color: #FFFFFF;
   }
   .learn-more svg{
