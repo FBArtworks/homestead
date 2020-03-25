@@ -51,6 +51,9 @@ label{
 .intro h4{
   font:35px/41px SF Pro Display;
 }
+.privacy-policy{
+  padding-bottom: 100px;
+}
 .privacy-policy h1{
   font: Bold 50px/60px SF Pro Text;
   padding: 10px;
