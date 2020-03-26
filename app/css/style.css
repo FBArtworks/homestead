@@ -2,6 +2,13 @@ html, body {height: 100%; width: 100%; margin: 0;}
 header{
   height: auto;
 }
+h1, h2, h3, h4, h5, h6, a{
+  overflow-y: hidden;
+}
+.hero-section img{
+  width: 130px;
+  height: 130px;
+}
 .nav{
     text-align: center;
     height: auto;
@@ -19,10 +26,11 @@ header{
   text-decoration: none;
   color: #FFFFFF;
   margin: 0 auto;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   line-height: 70px;
-  font:  22px/26px SF Pro Text;
+  font-family: 'SF Text';
+  font-size: 20px;
 }
 .nav label{
   margin: 0 40px 0 0;
@@ -34,7 +42,7 @@ header{
 }
 .nav img {
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: auto;
   margin-left: 20px;
   display: flex;
@@ -74,28 +82,33 @@ iframe {
 }
 
 .intro h4{
-  font:35px/41px SF Pro Display;
+  font-family: 'SF Display';
+  font-size: 38px;
 }
 .privacy-policy{
   padding-bottom: 100px;
 }
 .privacy-policy h1{
-  font: Bold 50px/60px SF Pro Text;
+  font-family: 'SF Text';
+  font-weight: bold;
+  font-size: 55px;
   padding: 10px;
-
 }
 .privacy-policy h2{
-  font:  40px SF Pro Text;
+  font-family: 'SF Text';
+  font-size: 40px;
   padding: 5px;
   margin-bottom: 40px;
   margin-top: 40px;
 
 }
 .privacy-policy h3{
-  font:  30px SF Pro Text;
+  font-family: 'SF Text';
+  font-size: 30px;
 }
 .privacy-policy p{
-  font: 22px/26px SF Pro Text
+  font-family: 'SF Text';
+  font-size: 24px;
 }
 
 .copyright{
@@ -103,7 +116,8 @@ iframe {
     margin-top: 40px;
 }
 .copyright h6{
-  font: 15px SF Pro Display;
+  font-family: 'SF Display';
+  font-size: 15px;
   text-align: center;
   color: #FFFFFF;
   line-height: 50px;
@@ -581,15 +595,15 @@ iframe {
   src: url(/fonts/SF-Pro-Display/SF-Pro-Display-BlackItalic.otf) format("opentype");
   font-style: Blackitalic;
 }
-/*
+
 @font-face {
   font-family: 'SF-Pro-Display';
-  src: url(/homestead/app/fonts/SF-Pro-Display/SF-Pro-Display-Bold.otf) format("opentype");
+  src: url("http://homestead.fbartworks.de/fonts/SF-Pro-Display/SF-Pro-Display-Bold.otf") format("opentype");
   font-style: Bold;
-}*/
+}
 @font-face {
   font-family: 'SF-Pro-Display';
-  src: url(/fonts/SF-Pro-Display/SF-Pro-Display-BoldItalic.otf) format("opentype");
+  src: url("/fonts/SF-Pro-Display/SF-Pro-Display-BoldItalic.otf") format("opentype");
   font-style: Bolditalic;
 }
 @font-face {
@@ -678,7 +692,7 @@ iframe {
 }
 @font-face {
   font-family: 'SF-Pro-Text';
-  src: url(/fonts/SF-Pro-Text/SF-Pro-Text-Bold.otf) format("opentype");
+  src: url("http://homestead.fbartworks.de/fonts/SF-Pro-Text/SF-Pro-Text-Bold.otf") format("opentype");
   font-weight: Bold;
 }
 @font-face {
@@ -813,6 +827,18 @@ iframe {
 
 }
 @media (max-width:480px) {
+  .privacy-policy h1{
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 30px !important;
+    padding: 10px;
+  }
+  .privacy-policy h2{
+    font-size: 28px !important;
+  }
+  .nav img{
+    margin-top: 10px;
+  }
   .nav label{
     display: block;
     cursor: pointer;
@@ -904,7 +930,7 @@ iframe {
   }
   .hero-content h1{
     font-family: 'SF Display';
-    font-weight: 700;
+    font-weight: Bold;
     font-size: 30px;
     text-align: center;
   }
@@ -936,19 +962,24 @@ iframe {
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
-    font: Bold 15px/18px SF Pro Text;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 16px;
   }
   .learn-more{
     margin: 0 auto;
     padding-top: 50px;
-    font:  22px/26px SF Pro Text;
+    font-family: 'SF Display';
+    font-weight: normal;
+    font-size: 24px;
   }
   .learn-more a{
-    font-family: SF-Pro-Display;
+    font-family: 'SF Display';
     text-decoration: none;
   }
   .learn-more h4{
-    font: 22px/26px SF Pro Text;
+    font-family: 'SF Display';
+    font-size: 24px;
     color: #FFFFFF;
   }
   .learn-more svg{
@@ -959,18 +990,24 @@ iframe {
     margin-bottom: 60px;
   }
   .about h1{
-    font: Bold 40px/48px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: Bold;
+    font-size: 44px;
   }
   .about-sub{
-    font: Bold 24px/29px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 26px;
     color: #C6C6C6;
   }
   .about h3{
-    font: Semibold 400px SF Pro Rounded;
+    font-family: 'SF Text';
+    font-weight: 600;
   }
   .about p{
     padding-top: 40px;
-    font: 22px/26px SF Pro Text;
+    font-family: 'SF Text';
+    font-size: 24px;
   }
   .leadership-cta{
     margin: 0 auto;
@@ -1031,7 +1068,9 @@ iframe {
   .announcement-text h1{
     margin-top: 20px;
     text-align: center;
-    font: Bold 30px/36px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;
     color: #FFFFFF;
     margin-left: auto;
     margin-right: auto;
@@ -1041,7 +1080,8 @@ iframe {
     text-align: center;
     padding-right: 20px;
     padding-left: 20px;
-    font: 22px/26px SF Pro Text;
+    font-family: 'SF Text';
+    font-size: 24px;
     color: #ADADAD;
     height: auto;
     margin-right: auto;
@@ -1058,7 +1098,8 @@ iframe {
     margin-left: auto;
   }
   .announcement-cta h3{
-    font: 22px/26px SF Pro Display;
+    font-family: 'SF Display';
+    font-size: 24px;
     color: #2288BB;
     padding-top: 24px;
   }
@@ -1078,11 +1119,15 @@ iframe {
     padding-bottom: 30px;
   }
   .service h4{
-    font: Bold 16px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 16px;
     color: #C6C6C6;
   }
   .service h2{
-    font: Bold 27px/33px SF Pro Text;
+    font-family: 'SF Text';
+    font-size: 30px;
+    font-weight: bold;
   }
 
   .trennstrich{
@@ -1092,14 +1137,15 @@ iframe {
 
   .mentoring-link img{
     display: block;
-    width: 350px;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
     padding-bottom: 50px;
   }
   .mentoring-link h4{
-    font:  22px/26px SF Compact Display;
+    font-family: 'SF Display';
+    font-size: 24px;
     color: #2288BB;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -1127,7 +1173,8 @@ iframe {
     padding-left: 20px;
   }
   .footer-sitemap h6{
-    font:  17px SF Pro Text;
+    font-family: 'SF Text';
+    font-size: 17px;
     color: #DEDEDE;
   }
   .discord-footer{
@@ -1157,8 +1204,9 @@ iframe {
   }
 
   h1{
-    color: rgb(252, 105, 96)
-    font: Bold 60px/71px SF Pro Display;
+    color: rgb(0, 0, 0);
+    font-family: 'SF Display';
+    font-size: 64px;
   }
   .hero-section{
     background-color: rgb(0,0,0);
@@ -1224,14 +1272,19 @@ iframe {
     padding-left: 50px;
   }
   .hero-lead-section h4{
-    font: Bold 27px/33px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 30px;
     color: #FFFFFF;
+    opacity: 0.85;
     margin-top: auto;
     margin-bottom: auto;
   }
 
   .hero-lead-section h2{
-    font: Bold 21px/25px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: Bold;
+    font-size: 23px;
     color: #C6C6C6;
 
   }
@@ -1242,12 +1295,16 @@ iframe {
 
   }
   .partner-section h1{
-    font: Bold 40px/48px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: Bold;
+    font-size: 44px;
     padding-left: 30px;
     padding-bottom: 40px;
   }
   .partner-section h4{
-    font: Bold 24px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 24px;
     text-align: center;
     padding-bottom: 20px;
   }
@@ -1259,7 +1316,9 @@ iframe {
       padding-bottom: 80px;
   }
   .impact-section h2{
-    font: Bold 40px/48px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 44px;
 
   }
   .impact-object{
@@ -1267,7 +1326,9 @@ iframe {
     text-align: center;
   }
   .impact-object h1{
-    font: Bold 90px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: Bold;
+    font-size: 90px;
     color: #FFFFFF;
   }
   .impact-object h4{
@@ -1304,15 +1365,21 @@ iframe {
     padding-bottom: 110px;
   }
   .mentor-section h1{
-    font: Bold 37px/44px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 40px;
   }
   .mentor-section h3{
-    font: Bold 25px/30px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 27px;
     color: #C6C6C6;
   }
   .mentoring-cta h3{
     text-align: left;
-    font:  25px/30px SF Pro Display;
+    font-family: 'SF Display';
+    font-size: 27px;
+    font-weight: 200;
      text-decoration: none;
      color: #2288BB;
   }
@@ -1326,12 +1393,15 @@ iframe {
     padding-left: 20px
   }
   .hero-section h1{
-    font: Bold 39px/46px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 44px;
     color: #FFFFFF;
     padding-left: 12px;
   }
   .hero-section img{
     width: 70px;
+    height: 70px;
   }
   .intro{
     padding-top: 90px;
@@ -1340,15 +1410,20 @@ iframe {
     padding-left: 30px;
   }
   .intro h1{
-    font: Bold 40px/48px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 44px;
   }
   .intro h3{
-    font: Bold 25px/30px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 27px;
     color: #C6C6C6;
     padding-bottom: 15px;
   }
   .intro h4{
-    font:  18px/21px SF Pro Text;
+    font-family: 'SF Text';
+    font-size: 26px;
     padding-top: 15px;
   }
   .intro img{
@@ -1386,18 +1461,23 @@ iframe {
     padding-bottom: 60px;
   }
   .leadership-section h3{
-    font: Bold 30px/36px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;
     padding-bottom: 30px;
     text-align: center;
   }
   .leadership-section h4{
-    font: 30px/36px SF Pro Rounded;
+    font-family: 'SF Text';
+    font-size: 33px;
+    font-weight: 400;
     color: #2288BB;
     text-align: center;
 
   }
   .leadership-section h5{
-    font:  24px/29px SF Pro Display;
+    font-family: 'SF Display';
+    font-size: 25px;
     text-align: center;
     padding-bottom: 30px;
   }
@@ -1410,32 +1490,43 @@ iframe {
     padding-bottom: 65px;
   }
   .bod-section h3{
-    font: Bold 30px/36px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;
     padding-bottom: 30px;
     text-align: center;
   }
   .bod-section h4{
-    font:  30px/36px SF Pro Rounded;
+    font-family: 'SF Text';
+    font-size: 33px;
+    font-weight: 400;
     color: #2288BB;
     text-align: center;
   }
   .bod-section h5{
-    font:  24px/29px SF Pro Display;
+    font-family: 'SF Display';
+    font-size: 25px;
     text-align: center;
   }
 
 
   .jobs-banner h1{
-    font: Bold 37px/44px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 40px;
     padding-top: 70px;
   }
   .jobs-banner h2{
-    font: Bold 25px/30px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 27px;
     color: #C6C6C6;
     padding-bottom: 10px;
   }
   .jobs-banner h3{
-    font:  25px/30px SF Pro Display;
+    font-family: 'SF Text';
+    font-size: 33px;
+    font-weight: 400;
     color: #2288BB;
   }
   .jobs-banner img{
@@ -1465,7 +1556,9 @@ iframe {
 
   .discord-badge h3{
     margin-top: auto;
-    font: Bold 28px/34px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 31px;
     color: #818FD9;
     padding-left: 15px;
     margin-bottom: auto;
@@ -1481,22 +1574,39 @@ iframe {
     padding-bottom: 150px;
   }
   .impressum h1{
-    font: Bold 40px/48px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 44px;
   }
   .impressum-address{
     padding-top: 35px;
   }
   .impressum-address h4{
-    font:  20px/24px SF Pro Text;
+    font-family: 'SF Text';
+    font-size: 22px;
+
   }
   .impressum-contact{
     padding-top: 20px;
   }
   .impressum-contact h4{
-    font:  20px/24px SF Pro Text;
+    font-family: 'SF Text';
+    font-size: 22px;
   }
 }
 @media (min-width:481px) and (max-width:800px) {
+  .privacy-policy h1{
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 40px !important;
+    padding: 10px;
+  }
+  .privacy-policy h2{
+    font-size: 38px !important;
+  }
+  .nav img{
+    margin-top: 10px;
+  }
   .nav label{
     display: block;
     cursor: pointer;
@@ -1547,9 +1657,9 @@ iframe {
     margin-right: auto;
   }
   .hero-content h1{
-    font-family: SF Display;
-    font-weight: 900;
-    font-size: 30px;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 50px;
     text-align: center;
   }
   .learn-more {
@@ -1582,19 +1692,24 @@ iframe {
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    font: Bold 30px/36px SF Pro Text; color: #C6C6C6; opacity: 1;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 23px;
+    color: #C6C6C6; opacity: 1;
   }
   .learn-more{
     margin: 0 auto;
     padding-top: 130px;
-    font: Regular 22px/26px SF Pro Text;
-  }
+    font-family: 'SF Display';
+    font-weight: normal;
+    font-size: 24px;  }
   .learn-more a{
-    font-family: SF-Pro-Display;
+    font-family: 'SF Display';
     text-decoration: none;
   }
   .learn-more h4{
-    font: 22px/26px SF Pro Text;
+    font-family: 'SF Display';
+    font-size: 26px;
     color: #FFFFFF;
   }
   .learn-more svg{
@@ -1605,18 +1720,23 @@ iframe {
     margin-bottom: 60px;
   }
   .about h1{
-    font: Bold 60px/71px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: Bold;
+    font-size: 60px;
   }
   .about-sub{
-    font: Bold 30px/36px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;
     color: #C6C6C6;
   }
   .about h3{
-    font: Semibold 400px SF Pro Rounded;
-  }
+    font-family: 'SF Text';
+    font-weight: 600;  }
   .about p{
     padding-top: 40px;
-    font: 22px/26px SF Pro Text;
+    font-family: 'SF Text';
+    font-size: 22px;
   }
   .hs-logo{
     width: 300px;
@@ -1676,7 +1796,9 @@ iframe {
   }
   .announcement-text h1{
     margin-top: 125px;
-    font: Bold 50px/60px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 55px;
     color: #FFFFFF;
     text-align: center;
     margin-right: auto;
@@ -1707,8 +1829,10 @@ iframe {
     margin-bottom: 45px;
   }
   .service h4{
-    font: Bold 30px/36px SF Pro Text;
-    color: #7E7E7E;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;
+     color: #7E7E7E;
 
   }
   .trennstrich{
@@ -1721,11 +1845,13 @@ iframe {
     margin-bottom: 25px;
   }
   .service h2{
-    font: Bold 50px/60px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 55px;  }
   .service h4{
-    font: Bold 30px/36px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;  }
   .service-innovation{
     margin-top: 27px;
     margin-bottom: 25px;
@@ -1736,7 +1862,7 @@ iframe {
   }
   .mentoring-link img{
     display: block;
-    width: 800px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
@@ -1745,7 +1871,8 @@ iframe {
     padding-left: 30px;
   }
   .mentoring-link h4{
-    font:  22px/26px SF Compact Display;
+    font-family: 'SF Display';
+    font-size: 24px;
     color: #2288BB;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -1773,7 +1900,8 @@ iframe {
     padding-left: 20px;
   }
   .footer-sitemap h6{
-    font:  17px SF Pro Text;
+    font-family: 'SF Text';
+    font-size: 17px;
     color: #DEDEDE;
   }
   .discord-footer{
@@ -1799,9 +1927,10 @@ iframe {
   }
 
   h1{
-    color: rgb(252, 105, 96)
-    font: Bold 60px/71px SF Pro Display;
-  }
+    color: rgb(0, 0, 0);
+    font-family: 'SF Display';
+    font-size: 64px;
+    }
   .hero-section{
     background-color: rgb(0,0,0);
   }
@@ -1815,6 +1944,8 @@ iframe {
     max-width: 16.25em;
     height: 16.25em;
     border: 1px solid #707070;
+    display: block;
+    margin: 0 auto;
   }
 
   .leadership-box{
@@ -1822,6 +1953,8 @@ iframe {
     height: 16.25em;
     border-radius: 15px;
     border: 1px solid #070707;
+    display: block;
+    margin: 0 auto;
   }
   footer{
     background-color: rgba(78, 78, 78, 1)
@@ -1869,15 +2002,18 @@ iframe {
     padding-bottom: 105px;
   }
   .hero-lead-section h4{
-    font:  30px SF Pro Text;
-    font-weight: 400;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 30px;
     opacity: 0.75;
     padding-top: 14px;
     color: #FFFFFF;
   }
 
   .hero-lead-section h2{
-    font: Bold 40px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: Bold;
+    font-size: 40px;
     color: #FFFFFF;
   }
 
@@ -1886,12 +2022,15 @@ iframe {
     padding-bottom: 70px;
   }
   .partner-section h1{
-    font: Bold 50px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: Bold;
+    font-size: 50px;
     padding-bottom: 40px;
   }
   .partner-section h4{
-    font: Bold 24px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 24px;  }
 
   .impact-section{
       padding-top: 30px;
@@ -1941,17 +2080,26 @@ iframe {
     padding-bottom: 110px;
   }
   .mentor-section h1{
-    font: Bold 55px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 55px;
   }
   .mentor-section h3{
-    font: Bold 40px/48px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 44px;
     color: #C6C6C6;
   }
   .mentoring-cta h3{
     text-align: left;
-    font: 34px SF Pro Display;
-     text-decoration: none;
+    font-family: 'SF Display';
+    font-size: 34px;
+    font-weight: 200;
+    text-decoration: none;
      color: #2288BB;
+  }
+  .mentoring-link img{
+    max-width: 800px;
   }
 
 
@@ -1963,7 +2111,9 @@ iframe {
     padding-bottom: 30px;
   }
   .hero-section h1{
-    font: Bold 65px SF Pro Text;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 64px;
     color: #FFFFFF;
     padding-left: 12px;
   }
@@ -1978,15 +2128,18 @@ iframe {
     padding-left: 30px;
   }
   .intro h1{
-    font: Bold 40px/48px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 44px;  }
   .intro h3{
-    font: Bold 25px/30px SF Pro Text;
-    color: #C6C6C6;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 27px;    color: #C6C6C6;
     padding-bottom: 15px;
   }
   .intro h4{
-    font:  18px/21px SF Pro Text;
+    font-family: 'SF Text';
+    font-size: 26px;
     padding-top: 15px;
   }
   .intro img{
@@ -2024,17 +2177,25 @@ iframe {
     padding-bottom: 60px;
   }
   .leadership-section h3{
-    font: Bold 30px/36px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;
     padding-bottom: 30px;
+    text-align: center;
   }
   .leadership-section h4{
-    font: 30px/36px SF Pro Rounded;
+    font-family: 'SF Text';
+    font-size: 33px;
+    font-weight: 400;
     color: #2288BB;
-
+    text-align: center;
   }
-  .leadership-section h5{
-    font:  24px/29px SF Pro Display;
 
+  .leadership-section h5{
+    font-family: 'SF Display';
+    font-size: 26px;
+    padding-bottom: 40px;
+    text-align: center;
   }
   .strich{
     margin-top: 60px;
@@ -2045,30 +2206,43 @@ iframe {
     padding-bottom: 65px;
   }
   .bod-section h3{
-    font: Bold 30px/36px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;
     padding-bottom: 30px;
+    text-align: center;
   }
   .bod-section h4{
-    font:  30px/36px SF Pro Rounded;
+    font-family: 'SF Text';
+    font-size: 33px;
+    font-weight: 400;
     color: #2288BB;
+    padding-bottom: 40px;
+    text-align: center;
   }
   .bod-section h5{
-    font:  24px/29px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-size: 26px;
+  text-align: center; }
 
 
   .jobs-banner h1{
-    font: Bold 65px/78px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 72px;
     padding-top: 70px;
   }
   .jobs-banner h2{
-    font: Bold 40px/48px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 44px;
     color: #C6C6C6;
     padding-bottom: 40px;
   }
   .jobs-banner h3{
-    font:  35px/41px SF Pro Display;
-    color: #2288BB;
+    font-family: 'SF Text';
+    font-size: 37px;
+    font-weight: 400;    color: #2288BB;
   }
 
 
@@ -2081,7 +2255,9 @@ iframe {
 
   .discord-badge h3{
     padding-top: 14px;
-    font: Bold 35px/41px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 38px;
     color: #818FD9;
     padding-left: 15px;
     padding-bottom: 35px;
@@ -2102,20 +2278,24 @@ iframe {
     padding-bottom: 150px;
   }
   .impressum h1{
-    font: Bold 50px/60px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 55px;
+    }
   .impressum-address{
     padding-top: 35px;
   }
   .impressum-address h4{
-    font: 22px/26px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-size: 24px;
+    }
   .impressum-contact{
     padding-top: 20px;
   }
   .impressum-contact h4{
-    font: 22px/26px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-size: 24px;
+    }
 }
 @media (min-width: 801px) and (max-width: 1024px){
   #navigation{
@@ -2184,8 +2364,9 @@ iframe {
     margin-right: auto;
   }
   .hero-content h1{
-    font: Bold 50px/60px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: Bold;
+    font-size: 55px;  }
   .learn-more {
     display: block;
     margin-left: auto;
@@ -2216,20 +2397,24 @@ iframe {
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    font: Bold 30px/36px SF Pro Text; color: #C6C6C6; opacity: 1;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 33px;    color: #C6C6C6;
+    opacity: 1;
   }
   .learn-more{
     margin: 0 auto;
     padding-top: 130px;
-    font: Regular 22px/26px SF Pro Text;
-  }
+    font-family: 'SF Display';
+    font-weight: normal;
+    font-size: 24px;  }
   .learn-more a{
-    font-family: SF-Pro-Display;
+    font-family: 'SF Display';
     text-decoration: none;
   }
   .learn-more h4{
-    font: 22px/26px SF Pro Text;
-    color: #FFFFFF;
+    font-family: 'SF Display';
+    font-size: 24px;    color: #FFFFFF;
   }
   .learn-more svg{
     margin: 0 auto;
@@ -2239,19 +2424,22 @@ iframe {
     margin-bottom: 60px;
   }
   .about h1{
-    font: Bold 60px/71px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: Bold;
+    font-size: 64px;  }
   .about-sub{
-    font: Bold 30px/36px SF Pro Text;
-    color: #C6C6C6;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;    color: #C6C6C6;
   }
   .about h3{
-    font: Semibold 400px SF Pro Rounded;
-  }
+    font-family: 'SF Text';
+    font-weight: 600;  }
   .about p{
     padding-top: 40px;
-    font: 22px/26px SF Pro Text;
-  }
+    padding-top: 40px;
+    font-family: 'SF Text';
+    font-size: 22px;  }
   .leadership-cta{
     margin: 0 auto;
     position: relative;
@@ -2264,19 +2452,30 @@ iframe {
   .leadership-cta h3 {
     margin: 0 auto;
   }
-  .logo{
+  .logo img{
+    width: 260px;
+    margin-top: 80px;
+    display: block;
     margin-right: auto;
-    margin-left: 4.5%;
-    margin-top: 145px;
+    margin-left: auto;
   }
   .discord-cta{
+    display: block;
     margin-right: auto;
     margin-left: auto;
     margin-top: 45px;
   }
+  .discord-button{
+    display: block;
+    margin: 0 auto;
+  }
   .discord-cta img{
-    margin-right: 10px;
-    margin-left: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 92px;
+    margin-bottom: 25px;
+
   }
   .discord-button{
     border: 2px solid #2288BB;
@@ -2323,8 +2522,9 @@ iframe {
     margin-bottom: 45px;
   }
   .service h4{
-    font: Bold 30px/36px SF Pro Text;
-    color: #7E7E7E;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;    color: #7E7E7E;
 
   }
   .trennstrich{
@@ -2337,11 +2537,10 @@ iframe {
     margin-bottom: 25px;
   }
   .service h2{
-    font: Bold 50px/60px SF Pro Text;
-  }
-  .service h4{
-    font: Bold 30px/36px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-size: 55px;
+    font-weight: bold;  }
+
   .service-innovation{
     margin-top: 27px;
     margin-bottom: 25px;
@@ -2359,7 +2558,8 @@ iframe {
     padding-bottom: 50px;
   }
   .mentoring-link h4{
-    font:  22px/26px SF Compact Display;
+    font-family: 'SF Display';
+    font-size: 24px;
     color: #2288BB;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -2385,33 +2585,36 @@ iframe {
     padding-top: 30px;
   }
   .footer-sitemap h6{
-    font: 20px SF Pro Text;
+    font-family: 'SF Text';
+    font-size: 20px;
     font-style: Thin;
     padding-right: 20px;
     color: #DEDEDE;
   }
   .discord-footer{
-    margin-top: 7.5%;
+    display: none;
   }
   .discord-footer h3{
-    font: Bold 35px/41px SF Pro Display;
+    font-family: 'SF Display';
+    font-size: 38px;
+    font-weight: bold;
     padding-top: 10px;
     padding-bottom: 12px;
   }
   .discord-footer img{
-    margin-right: 25px;
-    width: 65px;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+    display: block;
   }
   .homestead-cta{
     margin-top: 22px;
   }
   .homestead-cta img{
-    width: 70px;
+    display: none;
   }
   .homestead-cta h3{
-    font: Bold 35px/41px SF Pro Display;
-    padding-top: 10px;
-    padding-bottom: 12px;
+    display: none;
   }
 
 
@@ -2422,8 +2625,9 @@ iframe {
   }
 
   h1{
-    color: rgb(252, 105, 96)
-    font: Bold 60px/71px SF Pro Display;
+    color: rgb(0, 0, 0);
+    font-family: 'SF Display';
+    font-size: 64px;
   }
   .hero-section{
     background-color: rgb(0,0,0);
@@ -2490,16 +2694,18 @@ iframe {
     padding-bottom: 105px;
   }
   .hero-lead-section h4{
-    font:  30px SF Pro Text;
-    font-weight: 400;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 30px;
     opacity: 0.75;
     padding-top: 14px;
     color: #FFFFFF;
   }
 
   .hero-lead-section h2{
-    font: Bold 40px SF Pro Text;
-    color: #FFFFFF;
+    font-family: 'SF Text';
+    font-weight: Bold;
+    font-size: 40px;    color: #FFFFFF;
   }
 
   .partner-section{
@@ -2507,12 +2713,14 @@ iframe {
     padding-bottom: 70px;
   }
   .partner-section h1{
-    font: Bold 50px SF Pro Display;
-    padding-bottom: 40px;
+    font-family: 'SF Display';
+    font-weight: Bold;
+    font-size: 50px;    padding-bottom: 40px;
   }
   .partner-section h4{
-    font: Bold 24px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 24px;  }
 
   .impact-section{
       padding-top: 30px;
@@ -2562,16 +2770,21 @@ iframe {
     padding-bottom: 110px;
   }
   .mentor-section h1{
-    font: Bold 55px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 55px;
+    }
   .mentor-section h3{
-    font: Bold 40px/48px SF Pro Text;
-    color: #C6C6C6;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 44px;
+        color: #C6C6C6;
   }
   .mentoring-cta h3{
     text-align: left;
-    font: 34px SF Pro Display;
-     text-decoration: none;
+    font-family: 'SF Display';
+    font-size: 34px;
+    font-weight: 200;     text-decoration: none;
      color: #2288BB;
   }
 
@@ -2584,7 +2797,9 @@ iframe {
     padding-bottom: 30px;
   }
   .hero-section h1{
-    font: Bold 65px SF Pro Text;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 65px;
     color: #FFFFFF;
     padding-left: 12px;
   }
@@ -2597,16 +2812,18 @@ iframe {
     padding-bottom: 85px;
   }
   .intro h1{
-    font: Bold 62px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 62px;  }
   .intro h3{
     font: Bold 40px/48px SF Pro Text;
     color: #C6C6C6;
     padding-bottom: 15px;
   }
   .intro h4{
-    font: 30px/36px SF Pro Text;
-    padding-top: 15px;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;    padding-top: 15px;
   }
   .intro img{
     width: 400px;
@@ -2641,17 +2858,22 @@ iframe {
     padding-bottom: 60px;
   }
   .leadership-section h3{
-    font: Bold 30px/36px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;
     padding-bottom: 30px;
   }
   .leadership-section h4{
-    font: 30px/36px SF Pro Rounded;
-    color: #2288BB;
+    font-family: 'SF Text';
+    font-size: 33px;
+    font-weight: 400;    color: #2288BB;
 
   }
   .leadership-section h5{
-    font:  24px/29px SF Pro Display;
-
+    font-family: 'SF Display';
+    font-size: 25px;
+    text-align: left;
+    padding-bottom: 30px;
   }
   .strich{
     margin-top: 60px;
@@ -2662,30 +2884,47 @@ iframe {
     padding-bottom: 65px;
   }
   .bod-section h3{
-    font: Bold 30px/36px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;
     padding-bottom: 30px;
   }
   .bod-section h4{
-    font:  30px/36px SF Pro Rounded;
+    font-family: 'SF Text';
+    font-size: 33px;
+    font-weight: 400;
     color: #2288BB;
+    padding-bottom: 30px;
+
   }
   .bod-section h5{
-    font:  24px/29px SF Pro Display;
+    font-family: 'SF Display';
+    font-size: 25px;
   }
 
 
   .jobs-banner h1{
-    font: Bold 65px/78px SF Pro Display;
-    padding-top: 70px;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 70px;    padding-top: 70px;
   }
   .jobs-banner h2{
-    font: Bold 40px/48px SF Pro Text;
-    color: #C6C6C6;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 44px;    color: #C6C6C6;
     padding-bottom: 40px;
   }
   .jobs-banner h3{
-    font:  35px/41px SF Pro Display;
-    color: #2288BB;
+    font-family: 'SF Text';
+    font-size: 38px;
+    font-weight: 400;    color: #2288BB;
+  }
+  .jobs-banner img{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
 
@@ -2698,8 +2937,9 @@ iframe {
 
   .discord-badge h3{
     padding-top: 14px;
-    font: Bold 35px/41px SF Pro Display;
-    color: #818FD9;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 37px;    color: #818FD9;
     padding-left: 15px;
     padding-bottom: 35px;
   }
@@ -2719,20 +2959,21 @@ iframe {
     padding-bottom: 150px;
   }
   .impressum h1{
-    font: Bold 50px/60px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 55px;  }
   .impressum-address{
     padding-top: 35px;
   }
   .impressum-address h4{
-    font: 22px/26px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-size: 24px;  }
   .impressum-contact{
     padding-top: 20px;
   }
   .impressum-contact h4{
-    font: 22px/26px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-size: 24px;  }
 }
 @media (min-width: 1024px) and (max-width:1280px){
   #navigation{
@@ -2801,8 +3042,10 @@ iframe {
     margin-right: auto;
   }
   .hero-content h1{
-    font: Bold 50px/60px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 60px;
+    }
   .learn-more {
     display: block;
     margin-left: auto;
@@ -2833,20 +3076,25 @@ iframe {
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    font: Bold 30px/36px SF Pro Text; color: #C6C6C6; opacity: 1;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 33px;
+    color: #C6C6C6;
+     opacity: 1;
   }
   .learn-more{
     margin: 0 auto;
     padding-top: 130px;
-    font: Regular 22px/26px SF Pro Text;
-  }
+    font-family: 'SF Display';
+    font-weight: normal;
+    font-size: 24px;  }
   .learn-more a{
-    font-family: SF-Pro-Display;
+    font-family: 'SF Display';
     text-decoration: none;
   }
   .learn-more h4{
-    font: 22px/26px SF Pro Text;
-    color: #FFFFFF;
+    font-family: 'SF Display';
+    font-size: 26px;    color: #FFFFFF;
   }
   .learn-more svg{
     margin: 0 auto;
@@ -2856,18 +3104,22 @@ iframe {
     margin-bottom: 60px;
   }
   .about h1{
-    font: Bold 60px/71px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: Bold;
+    font-size: 60px;  }
   .about-sub{
-    font: Bold 30px/36px SF Pro Text;
-    color: #C6C6C6;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;    color: #C6C6C6;
   }
   .about h3{
-    font: Semibold 400px SF Pro Rounded;
-  }
+    font-family: 'SF Text';
+    font-weight: 600;  }
   .about p{
     padding-top: 40px;
-    font: 22px/26px SF Pro Text;
+    padding-top: 40px;
+    font-family: 'SF Text';
+    font-size: 22px;
   }
   .leadership-cta{
     margin: 0 auto;
@@ -2885,6 +3137,10 @@ iframe {
     margin-right: auto;
     margin-left: 4.5%;
     margin-top: 145px;
+    width: 400px;
+  }
+  .hs-logo{
+    width: 100%;
   }
   .discord-cta{
     margin-right: auto;
@@ -2892,12 +3148,15 @@ iframe {
     margin-top: 45px;
   }
   .discord-cta img{
-    margin-right: 10px;
-    margin-left: 10%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 40px;
   }
   .discord-button{
     border: 2px solid #2288BB;
     border-radius: 50px;
+    display: block;
+    margin: 0 auto;
     background-color: #FFFFFF
   }
   .discord-button h3{
@@ -2940,8 +3199,9 @@ iframe {
     margin-bottom: 45px;
   }
   .service h4{
-    font: Bold 30px/36px SF Pro Text;
-    color: #7E7E7E;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;    color: #7E7E7E;
 
   }
   .trennstrich{
@@ -2954,11 +3214,14 @@ iframe {
     margin-bottom: 25px;
   }
   .service h2{
-    font: Bold 50px/60px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 55px;  }
   .service h4{
-    font: Bold 30px/36px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;
+    }
   .service-innovation{
     margin-top: 27px;
     margin-bottom: 25px;
@@ -2976,7 +3239,8 @@ iframe {
     padding-bottom: 50px;
   }
   .mentoring-link h4{
-    font:  22px/26px SF Compact Display;
+    font-family: 'SF Display';
+    font-size: 24px;
     color: #2288BB;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -3002,7 +3266,8 @@ iframe {
     padding-top: 30px;
   }
   .footer-sitemap h6{
-    font: 20px SF Pro Text;
+    font-family: 'SF Text';
+    font-size: 20px;
     font-style: Thin;
     padding-right: 20px;
     color: #DEDEDE;
@@ -3011,7 +3276,9 @@ iframe {
     margin-top: 7.5%;
   }
   .discord-footer h3{
-    font: Bold 35px/41px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 37px;
     padding-top: 10px;
     padding-bottom: 12px;
   }
@@ -3026,7 +3293,9 @@ iframe {
     width: 70px;
   }
   .homestead-cta h3{
-    font: Bold 35px/41px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 38px;
     padding-top: 10px;
     padding-bottom: 12px;
   }
@@ -3039,8 +3308,9 @@ iframe {
   }
 
   h1{
-    color: rgb(252, 105, 96)
-    font: Bold 60px/71px SF Pro Display;
+    color: rgb(0, 0, 0);
+    font-family: 'SF Display';
+    font-size: 64px;
   }
   .hero-section{
     background-color: rgb(0,0,0);
@@ -3107,15 +3377,18 @@ iframe {
     padding-bottom: 105px;
   }
   .hero-lead-section h4{
-    font:  30px SF Pro Text;
-    font-weight: 400;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 30px;
     opacity: 0.75;
     padding-top: 14px;
     color: #FFFFFF;
   }
 
   .hero-lead-section h2{
-    font: Bold 40px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: Bold;
+    font-size: 40px;
     color: #FFFFFF;
   }
 
@@ -3124,12 +3397,15 @@ iframe {
     padding-bottom: 70px;
   }
   .partner-section h1{
-    font: Bold 50px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: Bold;
+    font-size: 50px;
     padding-bottom: 40px;
   }
   .partner-section h4{
-    font: Bold 24px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 24px;  }
 
   .impact-section{
       padding-top: 30px;
@@ -3179,16 +3455,21 @@ iframe {
     padding-bottom: 110px;
   }
   .mentor-section h1{
-    font: Bold 55px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 55px;  }
   .mentor-section h3{
-    font: Bold 40px/48px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 44px;
     color: #C6C6C6;
   }
   .mentoring-cta h3{
     text-align: left;
-    font: 34px SF Pro Display;
-     text-decoration: none;
+    font-family: 'SF Display';
+    font-size: 34px;
+    font-weight: 200;
+    text-decoration: none;
      color: #2288BB;
   }
 
@@ -3201,7 +3482,9 @@ iframe {
     padding-bottom: 30px;
   }
   .hero-section h1{
-    font: Bold 65px SF Pro Text;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 64px;
     color: #FFFFFF;
     padding-left: 12px;
   }
@@ -3214,16 +3497,18 @@ iframe {
     padding-bottom: 85px;
   }
   .intro h1{
-    font: Bold 62px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 62px;  }
   .intro h3{
-    font: Bold 40px/48px SF Pro Text;
-    color: #C6C6C6;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 44px;    color: #C6C6C6;
     padding-bottom: 15px;
   }
   .intro h4{
-    font: 30px/36px SF Pro Text;
-    padding-top: 15px;
+    font-family: 'SF Text';
+    font-size: 33px;    padding-top: 15px;
   }
   .intro img{
     width: 400px;
@@ -3258,17 +3543,19 @@ iframe {
     padding-bottom: 60px;
   }
   .leadership-section h3{
-    font: Bold 30px/36px SF Pro Text;
-    padding-bottom: 30px;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;    padding-bottom: 30px;
   }
   .leadership-section h4{
-    font: 30px/36px SF Pro Rounded;
-    color: #2288BB;
+    font-family: 'SF Text';
+    font-size: 33px;
+    font-weight: 400;    color: #2288BB;
 
   }
   .leadership-section h5{
-    font:  24px/29px SF Pro Display;
-
+    font-family: 'SF Display';
+    font-size: 26px;
   }
   .strich{
     margin-top: 60px;
@@ -3279,30 +3566,37 @@ iframe {
     padding-bottom: 65px;
   }
   .bod-section h3{
-    font: Bold 30px/36px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;
     padding-bottom: 30px;
   }
   .bod-section h4{
-    font:  30px/36px SF Pro Rounded;
+    font-family: 'SF Text';
+    font-size: 33px;
+    font-weight: 400;
     color: #2288BB;
   }
   .bod-section h5{
-    font:  24px/29px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-size: 26px;  }
 
 
   .jobs-banner h1{
-    font: Bold 65px/78px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 72px;
     padding-top: 70px;
   }
   .jobs-banner h2{
-    font: Bold 40px/48px SF Pro Text;
-    color: #C6C6C6;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 44px;    color: #C6C6C6;
     padding-bottom: 40px;
   }
   .jobs-banner h3{
-    font:  35px/41px SF Pro Display;
-    color: #2288BB;
+    font-family: 'SF Text';
+    font-size: 37px;    color: #2288BB;
   }
 
 
@@ -3315,7 +3609,9 @@ iframe {
 
   .discord-badge h3{
     padding-top: 14px;
-    font: Bold 35px/41px SF Pro Display;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 38px;
     color: #818FD9;
     padding-left: 15px;
     padding-bottom: 35px;
@@ -3336,20 +3632,21 @@ iframe {
     padding-bottom: 150px;
   }
   .impressum h1{
-    font: Bold 50px/60px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 55px;  }
   .impressum-address{
     padding-top: 35px;
   }
   .impressum-address h4{
-    font: 22px/26px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-size: 24px;  }
   .impressum-contact{
     padding-top: 20px;
   }
   .impressum-contact h4{
-    font: 22px/26px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-size: 24px;  }
 
 }
 @media (min-width: 1280px) and (max-width: 1920px) {
@@ -3419,8 +3716,9 @@ iframe {
     margin-right: auto;
   }
   .hero-content h1{
-    font: Bold 50px/60px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 60px;  }
   .learn-more {
     display: block;
     margin-left: auto;
@@ -3451,7 +3749,9 @@ iframe {
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    font: Bold 30px/36px SF Pro Text; color: #C6C6C6; opacity: 1;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 33px;     color: #C6C6C6; opacity: 1;
   }
   .learn-more{
     margin: 0 auto;
@@ -3459,12 +3759,12 @@ iframe {
     font: Regular 22px/26px SF Pro Text;
   }
   .learn-more a{
-    font-family: SF-Pro-Display;
+    font-family: 'SF Display';
     text-decoration: none;
   }
   .learn-more h4{
-    font: 22px/26px SF Pro Text;
-    color: #FFFFFF;
+    font-family: 'SF Display';
+    font-size: 26px;     color: #FFFFFF;
   }
   .learn-more svg{
     margin: 0 auto;
@@ -3474,19 +3774,21 @@ iframe {
     margin-bottom: 60px;
   }
   .about h1{
-    font: Bold 60px/71px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: Bold;
+    font-size: 64px;  }
   .about-sub{
-    font: Bold 30px/36px SF Pro Text;
-    color: #C6C6C6;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;    color: #C6C6C6;
   }
   .about h3{
-    font: Semibold 400px SF Pro Rounded;
-  }
+    font-family: 'SF Text';
+    font-weight: 600;   }
   .about p{
     padding-top: 40px;
-    font: 22px/26px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-size: 22px;  }
   .leadership-cta{
     margin: 0 auto;
     position: relative;
@@ -3558,8 +3860,9 @@ iframe {
     margin-bottom: 45px;
   }
   .service h4{
-    font: Bold 30px/36px SF Pro Text;
-    color: #7E7E7E;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;     color: #7E7E7E;
 
   }
   .trennstrich{
@@ -3572,11 +3875,13 @@ iframe {
     margin-bottom: 25px;
   }
   .service h2{
-    font: Bold 50px/60px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 55px;  }
   .service h4{
-    font: Bold 30px/36px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;  }
   .service-innovation{
     margin-top: 27px;
     margin-bottom: 25px;
@@ -3594,8 +3899,8 @@ iframe {
     padding-bottom: 50px;
   }
   .mentoring-link h4{
-    font:  22px/26px SF Compact Display;
-    color: #2288BB;
+    font-family: 'SF Display';
+    font-size: 24px;    color: #2288BB;
     margin: 0 auto;
     margin-bottom: 50px;
   }
@@ -3620,8 +3925,8 @@ iframe {
     padding-top: 30px;
   }
   .footer-sitemap h6{
-    font: 20px SF Pro Text;
-    font-style: Thin;
+    font-family: 'SF Text';
+    font-size: 20px;    font-style: Thin;
     padding-right: 20px;
     color: #DEDEDE;
   }
@@ -3629,8 +3934,9 @@ iframe {
     margin-top: 7.5%;
   }
   .discord-footer h3{
-    font: Bold 35px/41px SF Pro Display;
-    padding-top: 10px;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 37px;    padding-top: 10px;
     padding-bottom: 12px;
   }
   .discord-footer img{
@@ -3644,8 +3950,9 @@ iframe {
     width: 70px;
   }
   .homestead-cta h3{
-    font: Bold 35px/41px SF Pro Display;
-    padding-top: 10px;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 38px;    padding-top: 10px;
     padding-bottom: 12px;
   }
 
@@ -3657,8 +3964,9 @@ iframe {
   }
 
   h1{
-    color: rgb(252, 105, 96)
-    font: Bold 60px/71px SF Pro Display;
+    color: rgb(0, 0, 0);
+    font-family: 'SF Display';
+    font-size: 64px;
   }
   .hero-section{
     background-color: rgb(0,0,0);
@@ -3724,16 +4032,18 @@ iframe {
     padding-bottom: 105px;
   }
   .hero-lead-section h4{
-    font:  30px SF Pro Text;
-    font-weight: 400;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 30px;
     opacity: 0.75;
     padding-top: 14px;
     color: #FFFFFF;
   }
 
   .hero-lead-section h2{
-    font: Bold 40px SF Pro Text;
-    color: #FFFFFF;
+    font-family: 'SF Text';
+    font-weight: Bold;
+    font-size: 40px;    color: #FFFFFF;
   }
 
   .partner-section{
@@ -3741,12 +4051,14 @@ iframe {
     padding-bottom: 70px;
   }
   .partner-section h1{
-    font: Bold 50px SF Pro Display;
-    padding-bottom: 40px;
+    font-family: 'SF Display';
+    font-weight: Bold;
+    font-size: 50px;    padding-bottom: 40px;
   }
   .partner-section h4{
-    font: Bold 24px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 24px;  }
 
   .impact-section{
       padding-top: 30px;
@@ -3796,17 +4108,23 @@ iframe {
     padding-bottom: 110px;
   }
   .mentor-section h1{
-    font: Bold 55px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 55px;
+    }
   .mentor-section h3{
-    font: Bold 40px/48px SF Pro Text;
-    color: #C6C6C6;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 44px;
+        color: #C6C6C6;
   }
   .mentoring-cta h3{
     text-align: left;
-    font: 34px SF Pro Display;
-     text-decoration: none;
-     color: #2288BB;
+    font-family: 'SF Display';
+    font-size: 34px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #2288BB;
   }
 
 
@@ -3818,7 +4136,9 @@ iframe {
     padding-bottom: 30px;
   }
   .hero-section h1{
-    font: Bold 65px SF Pro Text;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 64px;
     color: #FFFFFF;
     padding-left: 12px;
   }
@@ -3831,15 +4151,19 @@ iframe {
     padding-bottom: 85px;
   }
   .intro h1{
-    font: Bold 62px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 62px;  }
   .intro h3{
-    font: Bold 40px/48px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 44px;
     color: #C6C6C6;
     padding-bottom: 15px;
   }
   .intro h4{
-    font: 30px/36px SF Pro Text;
+    font-family: 'SF Text';
+    font-size: 33px;
     padding-top: 15px;
   }
   .intro img{
@@ -3875,17 +4199,19 @@ iframe {
     padding-bottom: 60px;
   }
   .leadership-section h3{
-    font: Bold 30px/36px SF Pro Text;
-    padding-bottom: 30px;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;    padding-bottom: 30px;
   }
   .leadership-section h4{
-    font: 30px/36px SF Pro Rounded;
-    color: #2288BB;
+    font-family: 'SF Text';
+    font-size: 33px;
+    font-weight: 400;    color: #2288BB;
 
   }
   .leadership-section h5{
-    font:  24px/29px SF Pro Display;
-
+    font-family: 'SF Display';
+    font-size: 26px;
   }
   .strich{
     margin-top: 60px;
@@ -3896,30 +4222,34 @@ iframe {
     padding-bottom: 65px;
   }
   .bod-section h3{
-    font: Bold 30px/36px SF Pro Text;
-    padding-bottom: 30px;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;    padding-bottom: 30px;
   }
   .bod-section h4{
-    font:  30px/36px SF Pro Rounded;
-    color: #2288BB;
+    font-family: 'SF Text';
+    font-size: 33px;
+    font-weight: 400;    color: #2288BB;
   }
   .bod-section h5{
-    font:  24px/29px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-size: 26px;  }
 
 
   .jobs-banner h1{
-    font: Bold 65px/78px SF Pro Display;
-    padding-top: 70px;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 72px;    padding-top: 70px;
   }
   .jobs-banner h2{
-    font: Bold 40px/48px SF Pro Text;
-    color: #C6C6C6;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 44px;     color: #C6C6C6;
     padding-bottom: 40px;
   }
   .jobs-banner h3{
-    font:  35px/41px SF Pro Display;
-    color: #2288BB;
+    font-family: 'SF Text';
+    font-size: 37px;    color: #2288BB;
   }
 
 
@@ -3932,8 +4262,9 @@ iframe {
 
   .discord-badge h3{
     padding-top: 14px;
-    font: Bold 35px/41px SF Pro Display;
-    color: #818FD9;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 38px;    color: #818FD9;
     padding-left: 15px;
     padding-bottom: 35px;
   }
@@ -3953,20 +4284,21 @@ iframe {
     padding-bottom: 150px;
   }
   .impressum h1{
-    font: Bold 50px/60px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 55px;  }
   .impressum-address{
     padding-top: 35px;
   }
   .impressum-address h4{
-    font: 22px/26px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-size: 24px;  }
   .impressum-contact{
     padding-top: 20px;
   }
   .impressum-contact h4{
-    font: 22px/26px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-size: 24px;  }
 
 }
 @media (min-width: 1921px) and (max-width: 3840px){
@@ -4036,8 +4368,9 @@ iframe {
     margin-right: auto;
   }
   .hero-content h1{
-    font: Bold 50px/60px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 60px;  }
   .learn-more {
     display: block;
     margin-left: auto;
@@ -4054,7 +4387,7 @@ iframe {
   }
   .hero-content{
     padding-top: 10%;
-    margin-bottom: 530px;
+
   }
   .hero-line{
     margin: 0 auto;
@@ -4068,7 +4401,9 @@ iframe {
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    font: Bold 30px/36px SF Pro Text; color: #C6C6C6; opacity: 1;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 33px;     color: #C6C6C6; opacity: 1;
   }
   .learn-more{
     margin: 0 auto;
@@ -4076,12 +4411,12 @@ iframe {
     font: Regular 22px/26px SF Pro Text;
   }
   .learn-more a{
-    font-family: SF-Pro-Display;
+    font-family: 'SF Display';
     text-decoration: none;
   }
   .learn-more h4{
-    font: 22px/26px SF Pro Text;
-    color: #FFFFFF;
+    font-family: 'SF Display';
+    font-size: 26px;     color: #FFFFFF;
   }
   .learn-more svg{
     margin: 0 auto;
@@ -4091,19 +4426,21 @@ iframe {
     margin-bottom: 60px;
   }
   .about h1{
-    font: Bold 60px/71px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: Bold;
+    font-size: 64px;  }
   .about-sub{
-    font: Bold 30px/36px SF Pro Text;
-    color: #C6C6C6;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;    color: #C6C6C6;
   }
   .about h3{
-    font: Semibold 400px SF Pro Rounded;
-  }
+    font-family: 'SF Text';
+    font-weight: 600;   }
   .about p{
     padding-top: 40px;
-    font: 22px/26px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-size: 22px;  }
   .leadership-cta{
     margin: 0 auto;
     position: relative;
@@ -4175,8 +4512,9 @@ iframe {
     margin-bottom: 45px;
   }
   .service h4{
-    font: Bold 30px/36px SF Pro Text;
-    color: #7E7E7E;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;     color: #7E7E7E;
 
   }
   .trennstrich{
@@ -4189,11 +4527,13 @@ iframe {
     margin-bottom: 25px;
   }
   .service h2{
-    font: Bold 50px/60px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 55px;  }
   .service h4{
-    font: Bold 30px/36px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;  }
   .service-innovation{
     margin-top: 27px;
     margin-bottom: 25px;
@@ -4211,8 +4551,8 @@ iframe {
     padding-bottom: 50px;
   }
   .mentoring-link h4{
-    font:  22px/26px SF Compact Display;
-    color: #2288BB;
+    font-family: 'SF Display';
+    font-size: 24px;    color: #2288BB;
     margin: 0 auto;
     margin-bottom: 50px;
   }
@@ -4237,8 +4577,8 @@ iframe {
     padding-top: 30px;
   }
   .footer-sitemap h6{
-    font: 20px SF Pro Text;
-    font-style: Thin;
+    font-family: 'SF Text';
+    font-size: 20px;    font-style: Thin;
     padding-right: 20px;
     color: #DEDEDE;
   }
@@ -4246,8 +4586,9 @@ iframe {
     margin-top: 7.5%;
   }
   .discord-footer h3{
-    font: Bold 35px/41px SF Pro Display;
-    padding-top: 10px;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 37px;    padding-top: 10px;
     padding-bottom: 12px;
   }
   .discord-footer img{
@@ -4261,8 +4602,9 @@ iframe {
     width: 70px;
   }
   .homestead-cta h3{
-    font: Bold 35px/41px SF Pro Display;
-    padding-top: 10px;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 38px;    padding-top: 10px;
     padding-bottom: 12px;
   }
 
@@ -4274,8 +4616,9 @@ iframe {
   }
 
   h1{
-    color: rgb(252, 105, 96)
-    font: Bold 60px/71px SF Pro Display;
+    color: rgb(0, 0, 0);
+    font-family: 'SF Display';
+    font-size: 64px;
   }
   .hero-section{
     background-color: rgb(0,0,0);
@@ -4307,13 +4650,12 @@ iframe {
   .video{
     background-color: rgb(0,0,0);
   }
+  .trailer{
+    width: 100%
+  }
   .video-content{
     width: 100%
   }
-  .trailer{
-    width: 100%;
-  }
-
   .name-field{
     max-width: 456px;
     height: 64px;
@@ -4342,16 +4684,18 @@ iframe {
     padding-bottom: 105px;
   }
   .hero-lead-section h4{
-    font:  30px SF Pro Text;
-    font-weight: 400;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 30px;
     opacity: 0.75;
     padding-top: 14px;
     color: #FFFFFF;
   }
 
   .hero-lead-section h2{
-    font: Bold 40px SF Pro Text;
-    color: #FFFFFF;
+    font-family: 'SF Text';
+    font-weight: Bold;
+    font-size: 40px;    color: #FFFFFF;
   }
 
   .partner-section{
@@ -4359,12 +4703,14 @@ iframe {
     padding-bottom: 70px;
   }
   .partner-section h1{
-    font: Bold 50px SF Pro Display;
-    padding-bottom: 40px;
+    font-family: 'SF Display';
+    font-weight: Bold;
+    font-size: 50px;    padding-bottom: 40px;
   }
   .partner-section h4{
-    font: Bold 24px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 24px;  }
 
   .impact-section{
       padding-top: 30px;
@@ -4414,17 +4760,23 @@ iframe {
     padding-bottom: 110px;
   }
   .mentor-section h1{
-    font: Bold 55px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 55px;
+    }
   .mentor-section h3{
-    font: Bold 40px/48px SF Pro Text;
-    color: #C6C6C6;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 44px;
+        color: #C6C6C6;
   }
   .mentoring-cta h3{
     text-align: left;
-    font: 34px SF Pro Display;
-     text-decoration: none;
-     color: #2288BB;
+    font-family: 'SF Display';
+    font-size: 34px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #2288BB;
   }
 
 
@@ -4436,7 +4788,9 @@ iframe {
     padding-bottom: 30px;
   }
   .hero-section h1{
-    font: Bold 65px SF Pro Text;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 64px;
     color: #FFFFFF;
     padding-left: 12px;
   }
@@ -4449,15 +4803,19 @@ iframe {
     padding-bottom: 85px;
   }
   .intro h1{
-    font: Bold 62px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 62px;  }
   .intro h3{
-    font: Bold 40px/48px SF Pro Text;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 44px;
     color: #C6C6C6;
     padding-bottom: 15px;
   }
   .intro h4{
-    font: 30px/36px SF Pro Text;
+    font-family: 'SF Text';
+    font-size: 33px;
     padding-top: 15px;
   }
   .intro img{
@@ -4493,17 +4851,19 @@ iframe {
     padding-bottom: 60px;
   }
   .leadership-section h3{
-    font: Bold 30px/36px SF Pro Text;
-    padding-bottom: 30px;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;    padding-bottom: 30px;
   }
   .leadership-section h4{
-    font: 30px/36px SF Pro Rounded;
-    color: #2288BB;
+    font-family: 'SF Text';
+    font-size: 33px;
+    font-weight: 400;    color: #2288BB;
 
   }
   .leadership-section h5{
-    font:  24px/29px SF Pro Display;
-
+    font-family: 'SF Display';
+    font-size: 26px;
   }
   .strich{
     margin-top: 60px;
@@ -4514,30 +4874,34 @@ iframe {
     padding-bottom: 65px;
   }
   .bod-section h3{
-    font: Bold 30px/36px SF Pro Text;
-    padding-bottom: 30px;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 33px;    padding-bottom: 30px;
   }
   .bod-section h4{
-    font:  30px/36px SF Pro Rounded;
-    color: #2288BB;
+    font-family: 'SF Text';
+    font-size: 33px;
+    font-weight: 400;    color: #2288BB;
   }
   .bod-section h5{
-    font:  24px/29px SF Pro Display;
-  }
+    font-family: 'SF Display';
+    font-size: 26px;  }
 
 
   .jobs-banner h1{
-    font: Bold 65px/78px SF Pro Display;
-    padding-top: 70px;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 72px;    padding-top: 70px;
   }
   .jobs-banner h2{
-    font: Bold 40px/48px SF Pro Text;
-    color: #C6C6C6;
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 44px;     color: #C6C6C6;
     padding-bottom: 40px;
   }
   .jobs-banner h3{
-    font:  35px/41px SF Pro Display;
-    color: #2288BB;
+    font-family: 'SF Text';
+    font-size: 37px;    color: #2288BB;
   }
 
 
@@ -4550,8 +4914,9 @@ iframe {
 
   .discord-badge h3{
     padding-top: 14px;
-    font: Bold 35px/41px SF Pro Display;
-    color: #818FD9;
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 38px;    color: #818FD9;
     padding-left: 15px;
     padding-bottom: 35px;
   }
@@ -4571,20 +4936,20 @@ iframe {
     padding-bottom: 150px;
   }
   .impressum h1{
-    font: Bold 50px/60px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-weight: bold;
+    font-size: 55px;  }
   .impressum-address{
     padding-top: 35px;
   }
   .impressum-address h4{
-    font: 22px/26px SF Pro Text;
-  }
+    font-family: 'SF Text';
+    font-size: 24px;  }
   .impressum-contact{
     padding-top: 20px;
   }
   .impressum-contact h4{
-    font: 22px/26px SF Pro Text;
-  }
-
+    font-family: 'SF Text';
+    font-size: 24px;  }
 
 }
