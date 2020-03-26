@@ -5,6 +5,13 @@ header{
 h1, h2, h3, h4, h5, h6, a{
   overflow-y: hidden;
 }
+.hero-content{
+  height: 100% !important;
+}
+
+.leadership-box{
+  margin-bottom: 20px !important;
+}
 .hero-section img{
   width: 130px;
   height: 130px;
